@@ -1,4 +1,6 @@
 Предварительно спланировать методы #7
+=====
+
  Open	pussiatoday opened this issue 19 days ago · 6 comments
 Comments
 Assignees
@@ -76,6 +78,8 @@ pussiatoday commented 10 days ago
 Работу с литературой будем продумывать (уже начали продумывать) уже в индивидуальных ишью.
 
 Определиться всем с названиями работ #6
+=====
+
  Open	pussiatoday opened this issue 19 days ago · 9 comments
 Comments
 Assignees
@@ -196,6 +200,8 @@ edited
 Пользуйтесь!
 
 Деформации при травме #5
+=====
+
  Open	pussiatoday opened this issue 19 days ago · 16 comments
 Comments
 Assignees
@@ -436,16 +442,10 @@ pussiatoday commented 10 days ago •
 edited 
 И еще один момент: на объем тезисов пока не смотрите. Это требование — формальное. Их потом подрежем в самый последний момент, непосредственно перед подачей.
 @saveliy-morozov @SvetlanAlekseevna @EldarDursunov @DiesNat
-pussiatoday added a commit that referenced this issue 21 minutes ago
- @pussiatoday
-Перенести #5 в файл  …
-Verified
-ae5aaed
-pussiatoday added a commit that referenced this issue 7 minutes ago
- @pussiatoday
-Перенести #5 в файл 
 
 Опросники #4
+=====
+
  Open	pussiatoday opened this issue 20 days ago · 2 comments
 Comments
 Assignees
@@ -486,6 +486,8 @@ SvetlanAlekseevna commented 9 days ago
  👍 1 🎉 1
  
 Остеопороз или ВП #3
+=====
+
  Open	pussiatoday opened this issue 20 days ago · 13 comments
 Comments
 Assignees
@@ -688,6 +690,8 @@ pussiatoday commented 10 days ago
 Как успехи, Наталья Тимофеевна? Разобрались ли, что Buchbinder 2018 рекомендуют последующим исследователям?
 
 Дегенератика #2
+=====
+
  Open	pussiatoday opened this issue 20 days ago · 0 comments
 Comments
 Assignees
@@ -716,6 +720,8 @@ pussiatoday commented 20 days ago
  @pussiatoday pussiatoday assigned EldarDursunov 20 days ago
 
 Тип C #1
+=====
+
  Open	pussiatoday opened this issue 22 days ago · 1 comment
 Comments
 Assignees
