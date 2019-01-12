@@ -686,3 +686,31 @@ pussiatoday commented 10 days ago
 @DiesNat
 
 Как успехи, Наталья Тимофеевна? Разобрались ли, что Buchbinder 2018 рекомендуют последующим исследователям?
+
+Дегенератика #2
+ Open	pussiatoday opened this issue 20 days ago · 0 comments
+Comments
+Assignees
+ @EldarDursunov EldarDursunov
+
+Labels
+None yet
+Milestone
+ 
+Дедлайн подачи те...
+Notifications
+ Unsubscribe
+You’re receiving notifications because you authored the thread.
+2 participants
+@pussiatoday
+@EldarDursunov
+ Lock conversation
+  Pin issue  
+ Transfer issue Beta
+ Delete issue Beta
+@pussiatoday
+  Member
+pussiatoday commented 20 days ago
+Структура потока и лечения при дегенератике. Тезис.
+ @pussiatoday pussiatoday added this to the Дедлайн подачи тезисов на апрель milestone 20 days ago
+ @pussiatoday pussiatoday assigned EldarDursunov 20 days ago
