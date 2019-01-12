@@ -444,3 +444,44 @@ ae5aaed
 pussiatoday added a commit that referenced this issue 7 minutes ago
  @pussiatoday
 Перенести #5 в файл 
+
+Опросники #4
+ Open	pussiatoday opened this issue 20 days ago · 2 comments
+Comments
+Assignees
+ @SvetlanAlekseevna SvetlanAlekseevna
+
+Labels
+None yet
+Milestone
+ 
+Дедлайн подачи те...
+Notifications
+ Unsubscribe
+You’re receiving notifications because you authored the thread.
+2 participants
+@pussiatoday
+@SvetlanAlekseevna
+ Lock conversation
+  Pin issue  
+ Transfer issue Beta
+ Delete issue Beta
+@pussiatoday
+  Member
+pussiatoday commented 20 days ago
+Опросники: структура и результаты. Тезис.
+ @pussiatoday pussiatoday added this to the Дедлайн подачи тезисов на апрель milestone 20 days ago
+ @pussiatoday pussiatoday assigned SvetlanAlekseevna 20 days ago
+@pussiatoday
+  Member
+pussiatoday commented 10 days ago
+@SvetlanAlekseevna
+
+Светлана Алексеевна, 2018-12-31 обсуждали с Вами предварительный план тезисов. Прошу отразить здесь по установленному формату (см. 6de453f), а еще лучше добавить в этот репозиторий (в ветвь 2019) для своих тезисов отдельный файл по данному шаблону и уже отражать там (по аналогии со мной: 06c7fea).
+ @SvetlanAlekseevna
+  Member
+SvetlanAlekseevna commented 9 days ago
+70ed77b
+Добавлен шаблон тезисов.
+ 👍 1 🎉 1
+ 
