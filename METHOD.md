@@ -714,3 +714,40 @@ pussiatoday commented 20 days ago
 Структура потока и лечения при дегенератике. Тезис.
  @pussiatoday pussiatoday added this to the Дедлайн подачи тезисов на апрель milestone 20 days ago
  @pussiatoday pussiatoday assigned EldarDursunov 20 days ago
+
+Тип C #1
+ Open	pussiatoday opened this issue 22 days ago · 1 comment
+Comments
+Assignees
+ @pussiatoday pussiatoday
+
+Labels
+None yet
+Milestone
+ 
+Дедлайн подачи те...
+Notifications
+ Unsubscribe
+You’re receiving notifications because you were assigned.
+1 participant
+@pussiatoday
+ Lock conversation
+  Pin issue  
+ Transfer issue Beta
+ Delete issue Beta
+@pussiatoday
+  Member
+pussiatoday commented 22 days ago • 
+edited 
+Структура повреждений типа C.
+ @pussiatoday pussiatoday self-assigned this 22 days ago
+ @pussiatoday pussiatoday added enhancement  degeneration  labels 22 days ago
+ @pussiatoday pussiatoday added this to the p1m-apr-2019-conference-xa-submission-deadline milestone 22 days ago
+ @pussiatoday pussiatoday changed the title #1 Первая проблема 22 days ago
+ @pussiatoday pussiatoday changed the title Первая проблема Первая задача 22 days ago
+ @pussiatoday pussiatoday changed the title Первая задача Тип C 21 days ago
+ @pussiatoday pussiatoday removed degeneration  enhancement  labels 21 days ago
+@pussiatoday
+  Member
+pussiatoday commented 10 days ago
+Добавил черновик тезиса файлом: 06c7fea. Далее прогресс см. там в истории коммитов — обсуждение же, соответственно, если таковое будет иметь место, здесь.
