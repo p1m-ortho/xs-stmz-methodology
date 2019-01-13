@@ -5,21 +5,14 @@
 Comments
 Assignees
  @pussiatoday pussiatoday
-
  @SvetlanAlekseevna SvetlanAlekseevna
-
  @EldarDursunov EldarDursunov
-
 Labels
 None yet
 Milestone
- 
 Названия и план, ...
-
 Notifications
-
  Unsubscribe
- 
 You’re receiving notifications because you were assigned.
 
 5 participants
