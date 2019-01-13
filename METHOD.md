@@ -60,9 +60,7 @@ pussiatoday commented 19 days ago
 
  @pussiatoday pussiatoday referenced this issue 18 days ago
  
- Open
- 
-Определиться всем с названиями работ #6
+ Open Определиться всем с названиями работ #6
 
  @pussiatoday pussiatoday assigned EldarDursunov, DiesNat and saveliy-morozov 17 days ago
  
