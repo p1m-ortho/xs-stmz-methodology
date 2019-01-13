@@ -2,8 +2,11 @@
 =====
 
  Open	pussiatoday opened this issue 19 days ago · 6 comments
+ 
 Comments
+
 Assignees
+
  @pussiatoday pussiatoday
 
  @SvetlanAlekseevna SvetlanAlekseevna
@@ -15,35 +18,58 @@ None yet
 Milestone
  
 Названия и план, ...
+
 Notifications
+
  Unsubscribe
+ 
 You’re receiving notifications because you were assigned.
+
 5 participants
 @pussiatoday
 @saveliy-morozov
 @SvetlanAlekseevna
 @EldarDursunov
 @DiesNat
+
  Lock conversation
+ 
   Pin issue  
+  
  Transfer issue Beta
 You can opt in to our Beta for issue deletion. Try it.
+
 @pussiatoday
+
   Member
+  
 pussiatoday commented 19 days ago
+
 No description provided.
+
  @pussiatoday pussiatoday added this to the Начать работу milestone 19 days ago
+ 
  @pussiatoday pussiatoday assigned pussiatoday and SvetlanAlekseevna 19 days ago
+ 
 @pussiatoday
+
   Member
+  
 pussiatoday commented 19 days ago
 #1 #2 #3 #4 #5
+
  @pussiatoday pussiatoday referenced this issue 18 days ago
+ 
  Open
+ 
 Определиться всем с названиями работ #6
+
  @pussiatoday pussiatoday assigned EldarDursunov, DiesNat and saveliy-morozov 17 days ago
+ 
  @pussiatoday pussiatoday modified the milestones: Начать работу, Названия и план, попытка 2 17 days ago
+ 
  @pussiatoday pussiatoday referenced this issue 16 days ago
+ 
  Open
 Остеопороз или ВП #3
 @saveliy-morozov
