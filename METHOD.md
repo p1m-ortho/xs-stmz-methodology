@@ -557,7 +557,7 @@ DiesNat commented 15 days ago
  @pussiatoday
   Member
 pussiatoday commented 15 days ago
-https://gist.github.com/pussiatoday/d79494642f1da4c148ac20523610430c
+~~https://gist.github.com/pussiatoday/d79494642f1da4c148ac20523610430c~~ https://github.com/p1m-ortho/xa-p1m-apr-conference/commit/e7bc73bc210605c4478605defce96dd34312557d
  @DiesNat
   Member
 DiesNat commented 15 days ago
