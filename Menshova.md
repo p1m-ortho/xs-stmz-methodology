@@ -1,6 +1,6 @@
 # Заголовок
 
-Частота осложнений ВП по данным за 2018 год НИИ скорой помощи им. И.И.Джанелидзе
+Частота осложнений ВП по данным за 2018 год НИИ скорой помощи им. И.И.Джанелидзе по сравнению с консервативным лечением остеопоротических переломов позвонков
 
 # Введение
 
@@ -8,7 +8,7 @@
 
 # Цель
 
-Провести анализ частоты осложнений вп по сравнению с группами консервативного 
+Провести анализ частоты осложнений вп по сравнению с группами консервативного лечения
 
 # Материалы и методы
 
@@ -20,4 +20,16 @@
 
 # Выводы
 
-ВП менее\на столько же безопасна по сравнению с консервативным лечением. 
+ВП менее\на столько же безопасна по сравнению с консервативным лечением.
+
+Литература: 
+1. Buchbinder R, Johnston RV, Rischin KJ, Homik J, Jones CA, Golmohammadi K, Kallmes DF.
+Percutaneous vertebroplasty for osteoporotic vertebral compression fracture.
+Cochrane Database of Systematic Reviews 2018, Issue 4. Art. No.: CD006349.
+DOI: 10.1002/14651858.CD006349.pub3.
+2.Agnieszka Saracen (MN, PhD), Zbigniew Kotwica (MD, PhD) 2016
+Complications of percutaneous vertebroplasty an analysis of 1100 procedures performed in 616 patients
+3. Nizar A. Al-Nakshabandi 
+Minireview Percutaneous vertebroplasty complications
+Ann Saudi Med 31(3) May-June 2011. DOI: 10.4103/0256-4947.81542
+
