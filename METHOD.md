@@ -122,7 +122,10 @@ string,Примечание,comment_2
 submission_id
 is_retrieved_by_query
 spinality_type_per_query
-spinality_type_manual
+spinality_type_manual_1
+spinality_type_manual_2
+comment_1
+comment_2
 submission_date
 last_modified_date
 is_finalized
