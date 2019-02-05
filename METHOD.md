@@ -32,6 +32,48 @@
 
 Для этого отсортируем записи в случайном порядке (в `submission_id` загрузим 1359 случайных чисел без повторения, которые сейчас возьмем с [RANDOM.ORG](https://random.org) — готово, см. [список из 1359 случайных чисел](https://github.com/p1m-ortho/xs-led-dzhanelidze-global-spine-query/blob/96b8cb62c7ea1791bd4eb503bd8652a84c18dccb/RANDOM.ORG%20-%20Integer%20Set%20Generator.html)) и затем будем просматривать хотя бы до количества, которое необходимо на уровне значимости 0,99 при мощности 0,9 (это сейчас рассчитаем на ближайшем онлайн-калькуляторе для социологических исследований; только вот для какого статистического теста это будет подсчет? непонятно).
 
+Согласно методу, приведенному на странице [калькулятора размера выборки от Raosoft](http://www.raosoft.com/samplesize.html), и с использованием нижеследующих параметров минимальный размер — следующий (далее копипаста со страницы сайта):
+
+```
+What margin of error can you accept?
+5% is a common choice
+
+1
+%
+The margin of error is the amount of error that you can tolerate. If 90% of respondents answer yes, while 10% answer no, you may be able to tolerate a larger amount of error than if the respondents are split 50-50 or 45-55. 
+Lower margin of error requires a larger sample size.
+What confidence level do you need?
+Typical choices are 90%, 95%, or 99%
+
+
+99
+%
+The confidence level is the amount of uncertainty you can tolerate. Suppose that you have 20 yes-no questions in your survey. With a confidence level of 95%, you would expect that for one of the questions (1 in 20), the percentage of people who answer yes would be more than the margin of error away from the true answer. The true answer is the percentage you would get if you exhaustively interviewed everyone. 
+Higher confidence level requires a larger sample size.
+What is the population size?
+If you don't know, use 20000
+
+1359
+How many people are there to choose your random sample from? The sample size doesn't change much for populations larger than 20,000.
+What is the response distribution?
+Leave this as 50%
+
+0.0736
+%
+For each question, what do you expect the results will be? If the sample is skewed highly one way or the other,the population probably is, too. If you don't know, use 50%, which gives the largest sample size. See below under More information if this is confusing.
+Your recommended sample size is	
+48
+This is the minimum recommended size of your survey. If you create a sample of this many people and get responses from everyone, you're more likely to get a correct answer than you would from a large sample where only a small percentage of the sample responds to your survey.
+```
+
+Итак, нужно просмотреть хотя бы 48 историй.
+
+0.0736 получили как 1 / 1359 (т. к., если верить нашему запросу, среди 1359 записей должна быть только 1 спинальная; мы же хотим показать, что это не так).
+
+Итак, возьмем первые 48 (случайных уже на данный момент) записей из 1359 и загрузим их в БД.
+
+Полную версию файла тоже на всякий случай загрузим в БД, но в отдельную таблицу.
+
 ### Планирование: методы
 
 * Поднять электронные истории всех поступивших через приемное или АКО с 30.01.2019 00:00 по 04.02.2019 23:59.
