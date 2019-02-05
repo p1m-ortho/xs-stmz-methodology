@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>RANDOM.ORG - Integer Set Generator</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="/css/iestyle.css" media="all" />
+  <![endif]-->
+<meta name="application-name" content="RANDOM.ORG" />
+<link rel="apple-touch-icon" sizes="72x72" href="/graphics/touch/app-touch-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/graphics/touch/app-touch-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/graphics/touch/app-touch-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/graphics/touch/app-touch-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/graphics/touch/app-touch-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/graphics/touch/app-touch-152x152.png" />
+<link rel="apple-touch-icon" href="/graphics/touch/app-touch-full.png" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="Keywords" content="true random numbers" />
+  <meta name="description" content="This page allows you to generate random sets of integers using true randomness, which for many purposes is better than the pseudo-random number algorithms typically used in computer programs." />
+  <meta name="author" content="Mads Haahr" />
+  <script type="text/javascript" src="/js/random.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/simpledropdown.jquery.js"></script>
+  <script type="text/javascript" src="/js/md5.js"></script>
+</head>
+
+<body>
+
+  <div id="invisible">
+  <ul id="navigation">
+    <li><a href="/">Home</a></li>
+    <li><a href="/#games">Games</a>
+      <ul>
+        <li><a href="/quick-pick/">Lottery Quick Pick</a></li>
+        <li><a href="/keno/">Keno Quick Pick</a></li>
+        <li><a href="/coins/">Coin Flipper</a></li>
+        <li><a href="/dice/">Dice Roller</a></li>
+        <li><a href="/playing-cards/">Playing Card Shuffler</a></li>
+        <li><a href="/birdie-funds/">Birdie Fund Generator</a></li>
+      </ul>
+    </li>
+    <li><a href="/#numbers">Numbers</a>
+      <ul>
+        <li><a href="/integers/">Integers</a></li>
+        <li><a href="/sequences/">Sequences</a></li>
+        <li><a href="/integer-sets/">Integer Sets</a></li>
+        <li><a href="/gaussian-distributions/">Gaussian Numbers</a></li>
+        <li><a href="/decimal-fractions/">Decimal Fractions</a></li>
+        <li><a href="/bytes/">Raw Bytes</a></li>
+      </ul>
+    </li>
+    <li><a href="/#lists">Lists &amp; More</a>
+      <ul>
+        <li><a href="/lists/">List Randomizer</a></li>
+        <li><a href="/strings/">Strings</a></li>
+        <li><a href="/passwords/">Passwords</a></li>
+        <li><a href="/clock-times/">Clock Times</a></li>
+        <li><a href="/calendar-dates/">Calendar Dates</a></li>
+        <li><a href="/geographic-coordinates/">Geographic Coordinates</a></li>
+        <li><a href="/bitmaps/">Bitmaps</a></li>
+        <li><a href="/colors/hex">Hex Color Codes</a></li>
+        <li><a href="/files/">Pregenerated Files</a></li>
+        <li><a href="/jazz-scales/">Jazz Scales</a></li>
+        <li><a href="/audio-noise/">Pure White Audio Noise</a></li>
+        <li><a href="/lessness/">Samuel Beckett</a></li>
+      </ul>
+    </li>
+    <li><a href="/#draws">Drawings</a>
+      <ul>
+        <li><a href="/faq/#Q3.1">How to Pick a Winner (FREE)</a></li>
+        <li><a href="/draws/">Third-Party Draw Service</a></li>
+        <li><a href="/guides/draws/">Step by Step Guide</a></li>
+        <li><a href="/guides/video1/">Step by Step Video</a></li>
+        <li><a href="/draws/pricing/">Price Calculator</a></li>
+        <li><a href="/draws/records/">Public Records</a></li>
+        <li><a href="/draws/description/">Terms and Conditions</a></li>
+        <li><a href="/faq/#S5">Drawing FAQ</a></li>
+      </ul>
+    </li>
+    <li><a href="/#tools">Web Tools</a>
+      <ul>
+        <li><a href="/widgets/">Widgets for Your Pages</a></li>
+        <li><a href="https://api.random.org/">API for Automated Clients</a></li>
+        <li><a href="/clients/http/">Old API for Automated Clients</a></li>
+        <li><a href="/clients/">Old Guidelines for Automated Clients</a></li>
+        <li><a href="/banned-hosts/">Banned Hosts</a></li>
+      </ul>
+    </li>
+    <li><a href="/#statistics">Statistics</a>
+      <ul>
+        <li><a href="/statistics/">Real-Time Statistics</a></li>
+        <li><a href="/statistics/browser/">Graph Browser</a></li>
+        <li><a href="/analysis/">Testing Random Numbers</a></li>
+        <li><a href="/bit-tally/">Total Bit Tally</a></li>
+        <li><a href="/quota/">Your Quota</a></li>
+      </ul>
+    </li>
+    <li><a href="/testimonials/">Testimonials</a>
+      <ul>
+        <li><a href="/testimonials/lotteries/">Lotteries and Drawings</a></li>
+        <li><a href="/testimonials/games/">Games and Gambling</a></li>
+        <li><a href="/testimonials/sampling/">Random Sampling</a></li>
+        <li><a href="/testimonials/simulation/">Simulation and Modelling</a></li>
+        <li><a href="/testimonials/security/">Security</a></li>
+        <li><a href="/testimonials/arts/">The Arts</a></li>
+        <li><a href="/testimonials/miscellaneous/">Miscellaneous</a></li>
+      </ul>
+    </li>
+    <li><a href="/#learn">Learn More</a>
+      <ul>
+        <li><a href="/company/">About &amp; Contact</a></li>
+        <li><a href="/terms/">Terms and Conditions</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/randomness/">Introduction to Randomness</a></li>
+        <li><a href="/history/">History of RANDOM.ORG</a></li>
+        <li><a href="/acknowledgements/">Acknowledgements</a></li>
+        <li><a href="/media/">Media and Scientific Citations</a></li>
+        <li><a href="/newsletter/">Newsletter</a></li>
+        <li><a href="/quotations/">Quotations about Randomness</a></li>
+        <li><a href="/news/">What's New!</a></li>
+      </ul>
+    </li>
+    <li><a href="/account/">Login</a></li>
+  </ul>
+    <div id="search">
+<form action="https://www.random.org/search" method="get" target="_blank">
+  <div>
+    Search RANDOM.ORG<br />
+    <input type="text" name="q" size="16" />
+    <input type="submit" value="Search" />
+  </div>
+</form>
+</div>
+
+  <h1><span>True Random Number Service</span></h1>
+  <noscript><p style="background-color:#ffff90;padding: 0em .5em 0em .5em;font-size:.9em"><strong>Warning:</strong> Your browser does not support JavaScript &#8211; RANDOM.ORG may not work as expected</p></noscript>
+  <p style="background-color:#ddffdd;padding: 0em .5em 0em .5em">Do you own an iOS or Android device?  <a href="/app/">Check out our app!</a></p>
+
+  <h2>Random Integer Set Generator</h2>
+
+<p>You requested 1 set with 1359 unique random integers, taken from the [1,1359] range. The integers were not sorted.</p>
+<p>Here is your set:</p>
+<ul class="data">
+<li>Set 1: 1321 936 120 1268 272 56 143 369 407 119 1184 664 364 997 1068 834 1236 28 804 201 1273 721 79 289 1112 967 990 869 1110 115 624 108 700 374 182 419 98 294 110 222 596 266 1153 310 573 1150 497 1172 262 907 709 1186 441 131 1335 228 1332 811 715 1065 751 199 413 797 106 1141 651 917 256 1169 1129 1201 836 283 9 476 513 1240 1205 750 320 579 153 1054 417 144 1157 1125 483 968 1117 685 857 242 507 210 1135 788 923 1114 557 399 1223 731 161 550 1031 150 21 947 114 27 809 1341 795 626 1077 800 331 1197 931 570 344 798 239 458 1302 1218 754 1134 244 614 1282 851 1156 1011 1160 102 571 179 810 1152 770 91 290 733 1284 938 1100 592 527 813 820 118 794 723 1050 821 978 1082 1181 703 741 133 57 1126 921 112 551 1137 639 109 987 325 973 1084 1159 881 556 965 69 646 1345 729 988 909 704 84 462 763 606 343 50 891 284 1081 1066 1164 252 1193 47 1182 1099 644 359 747 601 867 995 1338 1072 814 495 1318 1043 1227 204 717 845 45 991 841 90 1124 488 82 380 123 629 696 649 749 176 941 1326 530 689 702 791 361 166 1113 870 406 568 391 42 223 762 241 605 1105 535 355 31 408 464 52 966 1246 1095 142 188 627 598 855 636 392 962 645 743 1155 1063 377 1306 293 1233 213 1199 154 1349 267 257 1259 300 324 759 1085 1265 44 53 92 141 1162 453 684 481 1270 249 394 1238 60 196 1307 1187 631 588 678 387 1286 317 477 498 1167 779 928 767 699 746 77 81 1210 1324 975 442 295 1014 134 492 832 843 130 1256 621 660 1091 695 1235 671 665 858 1277 701 1015 983 1143 100 1343 1309 852 1004 874 790 1214 311 663 65 819 850 574 322 1041 13 378 350 543 920 517 940 279 1263 1000 270 195 976 46 860 554 312 1145 224 849 395 80 356 670 590 1013 271 806 1314 897 739 1281 951 389 916 683 1163 718 59 589 22 313 420 593 600 323 1161 982 712 1308 330 757 1333 432 1192 758 981 411 1058 319 1166 486 191 72 67 1290 818 1350 652 122 1336 1337 456 333 1048 233 1047 433 1001 654 656 625 1347 833 354 393 1023 1271 742 1021 2 902 265 219 677 668 1280 518 366 40 756 1315 885 538 522 494 502 876 691 878 62 582 942 992 34 566 1149 840 740 1140 1313 362 1116 1224 1230 305 281 1206 1039 1303 39 617 720 910 1130 1219 299 93 960 1250 1305 489 1299 638 901 503 348 390 1334 1102 475 659 884 107 1296 953 1131 428 563 1300 892 540 145 620 778 128 1123 807 1019 856 207 524 534 866 792 451 282 367 286 427 1025 552 227 318 20 787 254 474 125 1260 1354 275 1165 650 1269 14 189 610 1070 1295 999 1258 1252 193 599 181 480 803 1052 1292 572 775 186 1032 147 628 4 1234 1170 529 1298 648 365 1311 958 542 1228 727 765 560 1293 886 1356 1174 658 1289 549 17 152 1090 36 353 226 466 511 86 274 536 829 713 1057 48 889 823 388 1190 436 175 825 151 277 260 16 211 1062 935 1232 49 136 64 1008 94 500 539 409 1024 595 165 839 653 959 826 1020 946 54 328 296 422 647 1196 1148 493 565 171 864 576 443 1254 215 315 838 302 924 1103 555 341 208 349 221 1257 177 914 7 1267 569 447 111 594 1080 103 1139 1061 1142 547 666 516 95 243 446 567 29 771 18 1351 793 1056 604 726 280 184 1225 698 1067 431 939 1317 178 613 908 465 78 899 285 469 724 970 251 1261 1078 1355 672 1006 544 1331 1035 545 485 686 471 338 71 984 956 893 253 587 127 676 769 326 904 435 690 1122 121 837 1104 859 562 541 1037 23 736 694 209 927 512 919 780 509 575 159 642 1138 1154 1352 1340 140 473 1030 710 591 969 559 1098 1069 773 1247 854 386 346 546 1215 1026 1200 949 124 776 1045 70 1128 673 345 190 1046 6 768 5 817 675 719 1249 1177 879 728 449 906 1089 655 129 162 212 1044 933 373 501 1146 1042 358 139 1002 235 439 398 974 1109 873 58 1316 11 185 525 10 303 246 126 744 1291 217 1108 454 1033 669 218 32 250 1040 548 1279 1120 1012 688 578 777 734 1183 929 872 1231 1097 339 340 1272 597 401 225 564 38 752 360 903 1339 737 1283 247 337 146 861 905 261 148 1208 526 912 1036 738 113 385 831 1073 1132 306 1088 276 508 632 482 43 760 1079 214 1168 461 558 796 138 1111 384 865 1275 452 937 273 1064 898 430 1287 101 934 1034 1195 371 8 961 97 197 505 1359 437 450 915 264 187 1096 383 519 88 1133 922 871 801 950 611 830 1288 445 61 925 979 888 510 1278 711 584 487 335 68 707 170 1330 680 1357 379 528 1094 382 1202 687 630 945 1329 971 1022 1239 815 581 520 722 748 104 1074 980 616 1319 1173 515 1222 19 725 641 753 363 347 1328 732 537 972 89 926 63 661 157 410 679 1119 1016 824 580 1189 1358 989 96 954 484 1179 135 87 1144 231 1243 351 1245 1176 1 1017 12 1344 640 1274 308 607 1003 414 37 705 1028 1242 799 1029 1253 993 342 236 1018 523 828 370 774 1071 880 291 1151 957 615 460 25 1346 245 1075 1203 426 423 603 532 1121 913 863 83 781 309 553 1115 761 51 237 490 521 964 1027 238 168 635 472 786 425 403 900 657 943 499 682 1010 448 220 608 918 948 577 137 457 1322 643 890 1266 1118 156 896 1323 1051 1107 268 85 117 1211 30 459 1310 561 1038 376 402 292 1087 278 1320 1086 812 1007 1178 805 429 149 533 375 667 932 963 444 397 1342 234 1217 105 194 1194 1213 862 463 160 612 304 1053 1209 55 585 716 692 258 802 206 894 478 816 15 287 368 424 952 198 405 1127 24 203 301 609 714 1198 491 1327 847 785 1248 1049 41 76 1221 240 955 1059 637 172 467 1244 33 183 622 1220 468 1312 623 846 789 996 1285 681 875 986 74 1304 496 822 26 1093 1185 158 255 1092 1251 1237 930 416 1175 334 706 232 506 263 755 216 200 1171 412 697 583 1106 298 1076 174 1297 248 35 192 440 1276 784 229 1325 1212 883 586 1294 169 336 1083 66 602 514 155 842 844 415 619 782 827 868 848 1353 1204 297 994 944 75 708 230 887 205 1055 772 269 1262 1229 438 877 745 1255 132 1009 1180 321 735 882 1188 895 434 163 853 1216 693 1060 259 1241 634 674 396 307 531 1191 357 1147 1264 316 764 372 421 504 977 1348 470 332 998 618 783 164 766 202 1226 99 400 73 1005 911 314 167 1158 381 835 479 173 180 662 418 3 288 730 633 327 329 1301 985 808 1101 116 1207 455 352 1136 404</li>
+</ul>
+<p>Timestamp: 2019-02-05 12:05:30 UTC</p>
+
+    <p></p>
+    <form method="get" action="">
+      <input type="hidden" name="sets" value="1" />
+      <input type="hidden" name="num" value="1359" />
+      <input type="hidden" name="min" value="1" />
+      <input type="hidden" name="max" value="1359" />
+<input type="hidden" name="seqnos" value="on" />
+      <input type="hidden" name="order" value="index" />
+
+      <input type="hidden" name="format" value="html" />
+      <input type="hidden" name="rnd" value="new" />
+      <input type="submit" value="Again!" />
+      <input type="button" onclick="history.go(-1);" value="Go Back" />
+    </form>
+
+  <p></p>
+  <div class="ruler"></div>
+
+<div style="text-align:center;">
+  <div>&copy; 1998-2019 RANDOM.ORG<br />Follow us: <a href="https://twitter.com/RandomOrg">Twitter</a> | <a href="https://www.facebook.com/RANDOM.ORG">Facebook</a> | <a href="https://plus.google.com/+RandomOrg">Google+</a><br /><a href="/terms/">Terms and Conditions</a><br /><a href="https://www.random.org/company/">About Us</a></div>
+</div>
+<script type="text/javascript">
+    if ("https:" == document.location.protocol) {
+      document.write(unescape("%3Cscript src='https://ssl.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    } else {
+      document.write(unescape("%3Cscript src='http://www.google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-6153345-1");
+    pageTracker._setDomainName("none");
+    pageTracker._setAllowLinker(true);
+    pageTracker._trackPageview();
+  </script>
+
+  </body>
+</html>
