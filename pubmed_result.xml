@@ -1,0 +1,646 @@
+<?xml version="1.0"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">28816873</PMID>
+        <DateCompleted>
+            <Year>2018</Year>
+            <Month>06</Month>
+            <Day>01</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2018</Year>
+            <Month>06</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1531-2291</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>31 Suppl 4</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Sep</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of orthopaedic trauma</Title>
+                <ISOAbbreviation>J Orthop Trauma</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The Need of Validated Disease-Specific Outcome Instruments for Spine Trauma.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>S33-S37</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1097/BOT.0000000000000945</ELocationID>
+            <Abstract>
+                <AbstractText>This article focuses on patient-reported and clinician-reported outcome measures in spine trauma care. The measurement of the quality of care and functional and health-related quality of life outcomes of spine trauma patients has become increasingly important. However, no outcome instrument is specifically designed, validated, or universally adapted for this specific patient population. Issues specific to spinal trauma patients may not be adequately addressed by the instruments that are currently used in the literature and the daily clinical practice. The AOSpine Knowledge Forum Trauma initiated a project to develop and validate such instruments for spine trauma patients. To reflect the different perspectives of patients and the treating surgeons, 2 separate tools are being developed: the Patient Reported Outcome Spine Trauma (AOSpine PROST) and Clinician Reported Outcome Spine Trauma (AOSpine CROST). These tools hold promise, as useful instruments to measure the outcomes of spine trauma patients with and without neurological deficit, making it more feasible for clinical use as well. Treating surgeons around the world are encouraged to use the AOSpine PROST and AOSpine CROST in daily clinical practice and for research purposes to create and contribute to evidence-based and patient-centered care. Using the same outcome measures that are specifically developed and validated for traumatic spine injuries will allow us to compare the outcomes of various treatments in a valid and reproducible fashion. This contributes to a reduction of the ongoing controversies and providing the best treatments for our patients.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Oner</LastName>
+                    <ForeName>Cumhur</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>*Department of Orthopaedics, University Medical Center Utrecht, Utrecht, the Netherlands; and †Department of Orthopaedic Surgery, The Rothman Institute, Thomas Jefferson University, Philadelphia, PA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sadiqi</LastName>
+                    <ForeName>Said</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lehr</LastName>
+                    <ForeName>Anne Mechteld</ForeName>
+                    <Initials>AM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schroeder</LastName>
+                    <ForeName>Gregory D</ForeName>
+                    <Initials>GD</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vaccaro</LastName>
+                    <ForeName>Alexander R</ForeName>
+                    <Initials>AR</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Orthop Trauma</MedlineTA>
+            <NlmUniqueID>8807705</NlmUniqueID>
+            <ISSNLinking>0890-5339</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D019299" MajorTopicYN="N">Decompression, Surgical</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004185" MajorTopicYN="Y">Disability Evaluation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015601" MajorTopicYN="N">Injury Severity Score</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020380" MajorTopicYN="N">Needs Assessment</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D017063" MajorTopicYN="N">Outcome Assessment (Health Care)</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000071066" MajorTopicYN="Y">Patient Reported Outcome Measures</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011788" MajorTopicYN="Y">Quality of Life</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013119" MajorTopicYN="N">Spinal Cord Injuries</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000534" MajorTopicYN="N">rehabilitation</QualifierName>
+                <QualifierName UI="Q000601" MajorTopicYN="N">surgery</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013124" MajorTopicYN="N">Spinal Injuries</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+                <QualifierName UI="Q000534" MajorTopicYN="N">rehabilitation</QualifierName>
+                <QualifierName UI="Q000601" MajorTopicYN="Y">surgery</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016896" MajorTopicYN="N">Treatment Outcome</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>8</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>8</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2018</Year>
+                <Month>6</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28816873</ArticleId>
+            <ArticleId IdType="doi">10.1097/BOT.0000000000000945</ArticleId>
+            <ArticleId IdType="pii">00005131-201709004-00005</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" IndexingMethod="Automated" Owner="NLM">
+        <PMID Version="1">28324214</PMID>
+        <DateCompleted>
+            <Year>2018</Year>
+            <Month>04</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2018</Year>
+            <Month>12</Month>
+            <Day>02</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1432-0932</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>26</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>05</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>European spine journal : official publication of the European Spine Society, the European Spinal Deformity Society, and the European Section of the Cervical Spine Research Society</Title>
+                <ISOAbbreviation>Eur Spine J</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Reviewer's comment concerning &quot;Development of the AOSpine patient reported outcome spine trauma (AOSpine PROST): a universal disease-specific outcome instrument for individuals with traumatic spinal column injury&quot; (by S. Sadiqi, et al. (2017) Eur Spine J;).</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1558</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s00586-017-5048-0</ELocationID>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Steib</LastName>
+                    <ForeName>Jean-Paul</ForeName>
+                    <Initials>JP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Service de Chirurgie du Rachis, Pavillon Chirurgical B, Hôpitaux Universitaires de Strasbourg, B.P. 426, 67091, Strasbourg Cedex, France. jean-paul.steib@chru-strasbourg.fr.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016422">Letter</PublicationType>
+                <PublicationType UI="D016420">Comment</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>21</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Eur Spine J</MedlineTA>
+            <NlmUniqueID>9301980</NlmUniqueID>
+            <ISSNLinking>0940-6719</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="CommentOn">
+                <RefSource>Eur Spine J. 2017 May;26(5):1550-1557</RefSource>
+                <PMID Version="1">28314996</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000071066" MajorTopicYN="Y">Patient Reported Outcome Measures</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013124" MajorTopicYN="N">Spinal Injuries</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013131" MajorTopicYN="N">Spine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D017388" MajorTopicYN="Y">Zygote Intrafallopian Transfer</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2018</Year>
+                <Month>4</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28324214</ArticleId>
+            <ArticleId IdType="doi">10.1007/s00586-017-5048-0</ArticleId>
+            <ArticleId IdType="pii">10.1007/s00586-017-5048-0</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Emerg Med Australas. 2005 Aug;17(4):307-13</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16091092</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" IndexingMethod="Curated" Owner="NLM">
+        <PMID Version="1">28314996</PMID>
+        <DateCompleted>
+            <Year>2018</Year>
+            <Month>01</Month>
+            <Day>11</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2018</Year>
+            <Month>12</Month>
+            <Day>02</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1432-0932</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>26</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>05</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>European spine journal : official publication of the European Spine Society, the European Spinal Deformity Society, and the European Section of the Cervical Spine Research Society</Title>
+                <ISOAbbreviation>Eur Spine J</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Development of the AOSpine Patient Reported Outcome Spine Trauma (AOSpine PROST): a universal disease-specific outcome instrument for individuals with traumatic spinal column injury.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1550-1557</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s00586-017-5032-8</ELocationID>
+            <Abstract>
+                <AbstractText Label="PURPOSE">To report on the multi-phase process used in developing the AOSpine Patient Reported Outcome Spine Trauma (AOSpine PROST), as well as the results of its application in a pilot study.</AbstractText>
+                <AbstractText Label="METHODS">The International Classification of Functioning, Disability and Health (ICF) methodology was used as the basis for the development of this tool. Four preparatory studies and a consensus conference were performed, and resulted in the selection of 25 core ICF categories as well as the scale for use. The first draft of the Dutch version of AOSpine PROST was pilot tested among a consecutively selected representative sample of 25 spine trauma patients, using the 'think aloud' and 'probing' methods.</AbstractText>
+                <AbstractText Label="RESULTS">Of the 25 core ICF categories, 9 related to body functions, 14 activities and participation, and 2 environmental factors. Those 25 core categories were implemented into the selected response scale, and resulted in a draft version of AOSpine PROST consisting of 19 items. From the pilot study, very satisfactory results were obtained for comprehensibility, relevance, acceptability, feasibility and completeness, as well as high internal consistency (Cronbach's α = 0.926).</AbstractText>
+                <AbstractText Label="CONCLUSIONS">Following the ICF methodology and including the results of 4 different preparatory studies and a consensus conference, the AOSpine PROST is developed. Taking the results from the subsequent pilot study into account, a definite version to be further validated will be developed. The AOSpine PROST has the potential to be a helpful tool in clinical practice and research to compare various treatments and improve the quality of health care.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sadiqi</LastName>
+                    <ForeName>Said</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedics, University Medical Center Utrecht, HP G05.228, P.O. Box 85500, 3508 GA, Utrecht, The Netherlands. s.sadiqi-3@umcutrecht.nl.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lehr</LastName>
+                    <ForeName>A Mechteld</ForeName>
+                    <Initials>AM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedics, University Medical Center Utrecht, HP G05.228, P.O. Box 85500, 3508 GA, Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Post</LastName>
+                    <ForeName>Marcel W</ForeName>
+                    <Initials>MW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Rehabilitation Center 'De Hoogstraat', Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Rehabilitation Medicine, Center for Rehabilitation, University Medical Center Groningen, Groningen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dvorak</LastName>
+                    <ForeName>Marcel F</ForeName>
+                    <Initials>MF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedics, University of British Columbia, Vancouver, BC, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kandziora</LastName>
+                    <ForeName>Frank</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Spinal Surgery, BGU-Hospital, Frankfurt, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rajasekaran</LastName>
+                    <ForeName>S</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedic and Spine Surgery, Ganga Hospital, Coimbatore, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schnake</LastName>
+                    <ForeName>Klaus J</ForeName>
+                    <Initials>KJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Spinal Surgery, Schön Klinik Nürnberg Fürth, Fürth, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vaccaro</LastName>
+                    <ForeName>Alexander R</ForeName>
+                    <Initials>AR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedics, Thomas Jefferson University, Philadelphia, PA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oner</LastName>
+                    <ForeName>F Cumhur</ForeName>
+                    <Initials>FC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Orthopaedics, University Medical Center Utrecht, HP G05.228, P.O. Box 85500, 3508 GA, Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>17</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Eur Spine J</MedlineTA>
+            <NlmUniqueID>9301980</NlmUniqueID>
+            <ISSNLinking>0940-6719</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="CommentIn">
+                <RefSource>Eur Spine J. 2017 May;26(5):1558</RefSource>
+                <PMID Version="1">28324214</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D004185" MajorTopicYN="Y">Disability Evaluation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D064702" MajorTopicYN="N">International Classification of Functioning, Disability and Health</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010865" MajorTopicYN="N">Pilot Projects</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D057566" MajorTopicYN="N">Self Report</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013124" MajorTopicYN="Y">Spinal Injuries</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+                <QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016896" MajorTopicYN="Y">Treatment Outcome</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">Development</Keyword>
+            <Keyword MajorTopicYN="Y">ICF</Keyword>
+            <Keyword MajorTopicYN="Y">Outcome instrument</Keyword>
+            <Keyword MajorTopicYN="Y">Patient reported outcome measure</Keyword>
+            <Keyword MajorTopicYN="Y">Spine trauma</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2018</Year>
+                <Month>1</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28314996</ArticleId>
+            <ArticleId IdType="doi">10.1007/s00586-017-5032-8</ArticleId>
+            <ArticleId IdType="pii">10.1007/s00586-017-5032-8</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Spine J. 2016 Aug;16(8):962-70</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">27058286</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spinal Cord. 2008 Mar;46(3):181-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17502878</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2015 Sep 1;40(17):1371-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">26323025</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2015 May 15;40(10):E578-86</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">25714848</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Phys Rehabil Med. 2015 Feb;51(1):105-17</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">24686893</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine J. 2014 Jan;14 (1):145-64</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">24332321</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur Spine J. 2016 Jul;25(7):2173-84</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">25716661</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2016 Dec 15;41(24):E1453-E1459</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">27172283</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Epidemiol. 2007 Jan;60(1):34-42</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17161752</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Rehabil Med. 2005 Jul;37(4):212-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16024476</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2006 Dec 1;31(25):2881-90</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17139218</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2013 Nov 1;38(23 ):2028-37</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">23970107</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Neurosurg Spine. 2010 Nov;13(5):638-47</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21039157</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Qual Life Res. 2008 Sep;17(7):1009-17</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18584308</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2006 Apr 15;31(8):859-68</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16622372</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2016 Feb;41(4):358-67</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">26555824</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2000 Dec 15;25(24):3186-91</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11124735</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spine (Phila Pa 1976). 2015 Jan 15;40(2):E91-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">25575093</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Spinal Cord. 2013 Jan;51(1):40-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">22890418</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Rehabil Med. 2002 Sep;34(5):205-10</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12392234</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur Spine J. 2017 May;26(5):1541-1549</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">27372945</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
