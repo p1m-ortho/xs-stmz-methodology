@@ -87,13 +87,12 @@ This is the minimum recommended size of your survey. If you create a sample of t
 ```
 Percent overall agreement = 87.50%
 
-Free-marginal kappa = 0.84
-95% CI for free-marginal kappa [0.73, 0.96]
+Free-marginal kappa = 0.75
+95% CI for free-marginal kappa [0.56, 0.94]
 
-Fixed-marginal kappa = 0.52
-95% CI for fixed-marginal kappa [0.05, 1.00]
-
-# of Cases: 48    # of Categories: 5    # of Raters: 2
+Fixed-marginal kappa = 0.50
+95% CI for fixed-marginal kappa [0.01, 0.99]
+# of Cases: 48  # of Categories: 2  # of Raters: 2
 ```
 
 Закрыл формы для редактирования для обоих участников.
