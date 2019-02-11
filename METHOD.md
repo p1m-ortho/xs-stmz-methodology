@@ -84,6 +84,18 @@ This is the minimum recommended size of your survey. If you create a sample of t
 
 Завершил тест 48 случайных историй. Время выполнения: с 2019-02-11 13:36 по 2019-02-11 14:27, но 8 записей уже заполнил ранее, а также отвлекался. Не знаю, сколько историй прошли по какому-либо из типов спинальности: надо смотреть.
 
+```
+Percent overall agreement = 87.50%
+
+Free-marginal kappa = 0.84
+95% CI for free-marginal kappa [0.73, 0.96]
+
+Fixed-marginal kappa = 0.52
+95% CI for fixed-marginal kappa [0.05, 1.00]
+
+# of Cases: 48    # of Categories: 5    # of Raters: 2
+```
+
 ### Обсуждение
 
 Мозговые орехи:
