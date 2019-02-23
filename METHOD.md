@@ -210,3 +210,5 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 1. **wrong outcome** (),
 1. **wrong study duration** (0),
 1. **foreign language** (0).
+
+НТМ: в Рэйане отскринено 24/80, 66 мин., 4 сессии.
