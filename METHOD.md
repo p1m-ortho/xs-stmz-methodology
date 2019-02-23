@@ -212,3 +212,5 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 1. **foreign language** (0).
 
 НТМ: в Рэйане отскринено 24/80, 66 мин., 4 сессии.
+
+НТМ: в Рэйане отскринено 43/80, 102 мин., 5 сессий.
