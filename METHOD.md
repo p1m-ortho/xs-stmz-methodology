@@ -131,10 +131,12 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 * **wrong outcome**,
 * **wrong population**,
 * **wrong publication type**,
-* **wrong study design**,
-* **wrong study duration**.
+* ~~**wrong study design**~~,
+* ~~**wrong study duration**~~.
 
 > Убрал здесь и далее вычеркивание `wrong_drug`, т. к. здесь оно не обосновано (нет PICO-формулы).
+> 
+> Вычеркнул здесь и далее `wrong study design` и `wrong study duration`, потому что ограничений по дизайну и сроку наблюдения не установлено в PICO.
 
 При этом _wrong drug_ разумеем, естественно, в более общем смысле как «не то вмешательство».
 
@@ -162,9 +164,9 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 1. **background article**,
 1. **wrong population**,
 1. **wrong drug**,
-1. **wrong study design**,
+1. ~~**wrong study design**~~,
 1. **wrong outcome**,
-1. **wrong study duration**,
+1. ~~**wrong study duration**~~,
 1. **foreign language**.
 
 Итак, явный порядок действий при скрининге для ясности:
