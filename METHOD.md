@@ -245,7 +245,7 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 
 Теперь, когда все скринеры выгрузили свои результаты в Гит, можно снять `Blind mode` в Рэйане, чтобы посчитать удобно согласие и подготовить Рэйан к консенсусу. Что сейчас и сделаю — готово: `Blind OFF`.
 
-Согласие на 8 категорий:
+Согласие на 8 категорий (не исключено и исключено пошагово):
 
 ```
 Percent overall agreement = 18.75%
@@ -255,7 +255,7 @@ Free-marginal kappa = 0.07
 
 Fixed-marginal kappa = -0.21
 95% CI for fixed-marginal kappa [-0.36, -0.05]
-# of Cases: # of Categories: # of Raters:
+# of Cases: 80    # of Categories: 8    # of Raters: 2
 ```
 
 Согласие на 2 категории (не исключено и исключено):
@@ -268,5 +268,5 @@ Free-marginal kappa = 0.48
 
 Fixed-marginal kappa = -0.15
 95% CI for fixed-marginal kappa [-0.55, 0.25]
-# of Cases: # of Categories: # of Raters:
+# of Cases: 80    # of Categories: 2    # of Raters: 2
 ```
