@@ -1,81 +1,81 @@
-"notes"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: foreign language,background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong drug,wrong population"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>true} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong population"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong population"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: foreign language,background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>true} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>true} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong drug"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong drug"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design,wrong drug"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong population,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong drug"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: foreign language,background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design,wrong drug"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: wrong population,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>true, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article"
-" RAYYAN-INCLUSION: {""Pavel""=>false, ""Наташа ""=>false} | RAYYAN-EXCLUSION-REASONS: background article,wrong study design"
+Pavel,Наташа
+background article,wrong study design
+foreign language,background article
+background article,wrong study design
+background article,wrong study design
+wrong drug,wrong population
+background article,not excluded
+background article,wrong population
+background article,wrong population
+background article,wrong study design
+foreign language,background article
+wrong study design,not excluded
+background article,wrong study design
+wrong study design,wrong study design
+background article,wrong study design
+wrong study design,not excluded
+background article,wrong study design
+wrong study design,wrong study design
+background article,wrong study design
+not excluded,wrong study design
+wrong study design,wrong study design
+not excluded,background article
+background article,background article
+background article,wrong drug
+background article,wrong drug
+wrong study design,wrong study design
+background article,wrong study design
+wrong study design,wrong drug
+not excluded,background article
+background article,wrong study design
+not excluded,background article
+background article,wrong study design
+not excluded,wrong study design
+not excluded,background article
+background article,wrong study design
+not excluded,background article
+wrong population,wrong study design
+wrong study design,wrong study design
+not excluded,background article
+not excluded,wrong study design
+background article,wrong study design
+background article,wrong study design
+wrong study design,wrong study design
+background article,wrong study design
+background article,wrong study design
+background article,wrong study design
+background article,wrong study design
+not excluded,background article
+wrong study design,wrong study design
+background article,wrong study design
+wrong study design,wrong study design
+background article,wrong study design
+not excluded,background article
+not excluded,background article
+not excluded,background article
+wrong study design,wrong study design
+background article,wrong study design
+background article,wrong drug
+background article,wrong study design
+wrong study design,wrong study design
+background article,wrong study design
+foreign language,background article
+background article,wrong study design
+background article,wrong study design
+background article,wrong study design
+background article,wrong study design
+wrong study design,wrong drug
+wrong study design,wrong study design
+not excluded,background article
+not excluded,background article
+wrong study design,wrong study design
+background article,wrong study design
+not excluded,wrong study design
+background article,wrong study design
+wrong study design,wrong study design
+not excluded,background article
+wrong population,wrong study design
+not excluded,background article
+background article,wrong study design
+background article,background article
+background article,wrong study design
