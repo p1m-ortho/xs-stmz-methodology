@@ -242,3 +242,5 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 | 6 wrong outcome            | 0   | 0   |
 | ~~7 wrong study duration~~ | NA  | NA  |
 | 8 foreign language         | 0   | 3   |
+
+Теперь, когда все скринеры выгрузили свои результаты в Гит, можно снять `Blind mode` в Рэйане, чтобы посчитать удобно согласие и подготовить Рэйан к консенсусу. Что сейчас и сделаю.
