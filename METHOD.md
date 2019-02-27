@@ -229,22 +229,16 @@ vertebroplasty[ti] (complication*[ti] or adverse[ti])
 
 ПВЖ: отскринил 80/80; по данным Рэйана, затратил 1 минуту за 1 сессию — все ясно: Рэйан упускает время, проведенное за офлайн-скринингом в мобильном приложении. Фактически я начал скрининг сразу перед a6ee3f4133377af7e43c57c57e7ef2bb5810b118, то есть всего заняло около 1 часа.
 
-1-й этап скрининга (по библиографическим записям), ПВЖ, всего включено и исключено, N = 80:
+1-й этап скрининга (по библиографическим записям), НТМ и ПВЖ, резюме (N = 80)
 
-```
-Inclusion decisions
-Undecided	0
-Included	18
-Excluded	62
-```
-
-1-й этап скрининга (по библиографическим записям), ПВЖ, исключено, пошагово, N = 62:
-
-```
-Exclusion reasons
-background article	39
-wrong study design	17
-foreign language	3
-wrong population	2
-wrong drug	1
-```
+| Шаг скрининга              | НТМ | ПВЖ |
+|----------------------------|-----|-----|
+| 0 not excluded             | 3   | 18  |
+| 1 wrong publication type   | 0   | 0   |
+| 2 background article       | 19  | 39  |
+| 3 wrong population         | 3   | 2   |
+| 4 wrong drug               | 5   | 1   |
+| 5 wrong study design       | 50  | 17  |
+| 6 wrong outcome            | 0   | 0   |
+| ~~7 wrong study duration~~ | NA  | NA  |
+| 8 foreign language         | 0   | 3   |
