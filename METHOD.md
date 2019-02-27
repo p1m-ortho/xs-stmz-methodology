@@ -257,3 +257,16 @@ Fixed-marginal kappa = -0.21
 95% CI for fixed-marginal kappa [-0.36, -0.05]
 # of Cases: # of Categories: # of Raters:
 ```
+
+Согласие на 2 категории (не исключено и исключено):
+
+```
+Percent overall agreement = 73.75%
+
+Free-marginal kappa = 0.48
+95% CI for free-marginal kappa [0.28, 0.67]
+
+Fixed-marginal kappa = -0.15
+95% CI for fixed-marginal kappa [-0.55, 0.25]
+# of Cases: # of Categories: # of Raters:
+```
