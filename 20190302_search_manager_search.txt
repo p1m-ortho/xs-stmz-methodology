@@ -1,0 +1,20 @@
+Search Name:	Spine Bone Muscle Region Anatomy Disease Symptom Trauma Procedure Device Surgery MeSH Only Feb 2 2019
+Date Run:	03/03/2019 00:28:28
+Comment:	W/input from strategies by Furlan 2015, Abudou 2013, Cheng 2013.
+
+ID	Search	Hits
+#1	MeSH descriptor: [Spine] explode all trees	4437
+#2	MeSH descriptor: [Spinal Diseases] explode all trees	3531
+#3	MeSH descriptor: [Back] explode all trees	647
+#4	MeSH descriptor: [Neck] explode all trees	481
+#5	MeSH descriptor: [Back Pain] explode all trees	4200
+#6	MeSH descriptor: [Neck Pain] explode all trees	1003
+#7	MeSH descriptor: [Neuralgia] explode all trees	1406
+#8	MeSH descriptor: [Back Muscles] explode all trees	126
+#9	MeSH descriptor: [Neck Muscles] explode all trees	221
+#10	MeSH descriptor: [Orthopedic Procedures] explode all trees	11459
+#11	MeSH descriptor: [Neurosurgical Procedures] explode all trees	5548
+#12	MeSH descriptor: [Surgical Equipment] explode all trees	10547
+#13	MeSH descriptor: [Neck Injuries] explode all trees	224
+#14	MeSH descriptor: [Back Injuries] explode all trees	787
+#15	#1 or #2 or #3 or #4 or #5 or #6 or #7 or #8 or #9 or #10 or #11 or #12 or #13 or #14	35608
