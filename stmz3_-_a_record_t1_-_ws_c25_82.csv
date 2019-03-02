@@ -1,0 +1,74 @@
+,ts_c1,type_c24,type_c24 - label_c18,ws_c25,ws_c25 - label_c9,key1_c26,key1_c26 - label_c19,val1_c27,ref1_c46,ref1_c46 - val1_c27,key2_c28,key2_c28 - label_c19,val2_c29,ref2_c47,ref2_c47 - val2_c29,key3_c30,key3_c30 - label_c19,val3_c31,ref3_c49,ref3_c49 - val3_c31,key4_c32,key4_c32 - label_c19,val4_c33,ref4_c50,ref4_c50 - val4_c33,key5_c34,key5_c34 - label_c19,val5_c35,ref5_c52,ref5_c52 - val5_c35,key6_c36,key6_c36 - label_c19,val6_c37,ref6_c53,ref6_c53 - val6_c37,key7_c38,key7_c38 - label_c19,val7_c39,ref7_c54,ref7_c54 - val7_c39,key8_c40,key8_c40 - label_c19,val8_c41,ref8_c55,ref8_c55 - val8_c41,key9_c42,key9_c42 - label_c19,val9_c43,ref9_c56,ref9_c56 - val9_c43,key10_c57,key10_c57 - label_c19,val10_c58,ref10_c59,ref10_c59 - val10_c58,key11_c60,key11_c60 - label_c19,val11_c61,ref11_c62,ref11_c62 - val11_c61
+807,2018-10-31 17:52,28,"Поисковый запрос в PubMed, обновление старого",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",4,Текст запроса,(aospine[tiab] (prost[tiab] or crost[tiab])),,,22,Всего возвратил записей,3,,,59,Комментарий,"Search results
+
+Items: 3
+
+Select item 288168731.
+
+The Need of Validated Disease-Specific Outcome Instruments for Spine Trauma.
+
+Oner C, Sadiqi S, Lehr AM, Schroeder GD, Vaccaro AR.
+
+J Orthop Trauma. 2017 Sep;31 Suppl 4:S33-S37. doi: 10.1097/BOT.0000000000000945. Review.
+
+PMID: 28816873
+
+Similar articles
+
+Select item 283242142.
+
+Reviewer's comment concerning ""Development of the AOSpine patient reported outcome spine trauma (AOSpine PROST): a universal disease-specific outcome instrument for individuals with traumatic spinal column injury"" (by S. Sadiqi, et al. (2017) Eur Spine J;).
+
+Steib JP.
+
+Eur Spine J. 2017 May;26(5):1558. doi: 10.1007/s00586-017-5048-0. Epub 2017 Mar 21. No abstract available.
+
+PMID: 28324214
+
+Similar articles
+
+Select item 283149963.
+
+Development of the AOSpine Patient Reported Outcome Spine Trauma (AOSpine PROST): a universal disease-specific outcome instrument for individuals with traumatic spinal column injury.
+
+Sadiqi S, Lehr AM, Post MW, Dvorak MF, Kandziora F, Rajasekaran S, Schnake KJ, Vaccaro AR, Oner FC.
+
+Eur Spine J. 2017 May;26(5):1550-1557. doi: 10.1007/s00586-017-5032-8. Epub 2017 Mar 17.
+
+PMID: 28314996
+
+Similar articles
+
+Впервые запрос пускали 2017-12-12.
+Тогда выдал те же 3 записи.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+906,2018-11-26 10:46,26,"Поисковый запрос в PubMed, новый",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",1,Название,Репликация Cutler 2016,,,59,Комментарий,"Решили, как минимум, реплицировать общий поиск Cutler 2016.
+Искали они в PubMed по названиям журналов.
+Должно получиться 19736 записей.
+Однако авторы, как водится, не привели ни дату поиска, ни границы CDAT/CRDT.
+В связи с этим может получиться ситуация, что искали в 2013, и еще не все статьи вышли.
+Или на момент поиска еще не все были проиндексированы.
+Причем, скорее всего, так и будет.
+Как нам определить допустимый процент вариации?
+Взять консервативную оценку 5% было бы необоснованно.
+Сейчас подумаем.
+Посмотрим работы на эту тему.
+Запрос пока не запускаем.
+Пока не определимся с процентом отклонения, с которым готовы смириться.
+Причем допустимым будет только отклонение в большую сторону с учетом нашей теории.",,,4,Текст запроса,"(2004:2013[dp]) (""Spine (Phila Pa 1976)""[ta] OR ""Eur Spine J""[ta] OR ""J Bone Joint Surg Am""[ta] OR ""Spine J""[ta] OR ""J Bone Joint Surg Br""[ta])",,,66,Методы: дизайн,"From 2004 to 2013, Spine, ESJ, The Spine Journal, JBJS (Am),
+and JBJS (Br) published 19,736 articles. ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+907,2018-11-26 10:59,26,"Поисковый запрос в PubMed, новый",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",1,Название,Работы про репликацию поисков в PubMed,,,4,Текст запроса,(pubmed[tiab] replicat*[tiab] search*[tiab]) 1600/01/01:2018/11/25[crdt],,,63,Цель и задачи,Определить безопасный процент отклонения числа результатов реплицированного запроса по сравнению с оригинальным.,,,36,Актуальность,26.11.2018 - 10:46,,,22,Всего возвратил записей,402,,,67,Методы: скрининг,"шаг 0 - не исключено [Records Not Excluded Step 0 Study Likely Replicating a PubMed Search or Review of Relatable Studies]
+Работы, в которых, по-видимому, реплицируют поиски в PubMed, или обзоры (заметки) на эту тему.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+908,2018-11-26 13:49,28,"Поисковый запрос в PubMed, обновление старого",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",1,Название,,907,Работы про репликацию поисков в PubMed,67,Методы: скрининг,"шаг 0 - не исключено [Records Not Excluded Step 0]
+шаг 1 - не по теме [Records Excluded Step 1 Study Likely Not Replicating a PubMed Search or Not a Review of Relatable Studies]
+Работы, в которых, по-видимому, не реплицируют поиски в PubMed, и обзоры (заметки) не на эту тему.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+909,2018-11-26 15:22,28,"Поисковый запрос в PubMed, обновление старого",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",1,Название,,907,Работы про репликацию поисков в PubMed,67,Методы: скрининг,"шаг 0 - не исключено [Records Not Excluded Step 0]
+шаг 1 - не по теме [Records Excluded Step 1 Study Likely Not Replicating a PubMed Search and Not a Review of Relatable Studies]
+Работы, в которых, по-видимому, не реплицируют поиски в PubMed, и обзоры (заметки) не на эту тему.",,,59,Комментарий,"В шаге 1 должно было быть не объединение, а пересечение.
+Исправили.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+912,2018-11-27 00:25,28,"Поисковый запрос в PubMed, обновление старого",82,"Опросники (patient-reported outcome measures, PROMs), валидизированные и не валидизированные, но применяемые в отношении позвоночно-спинномозговой травмы: состояние проблемы",1,Название,,907,Работы про репликацию поисков в PubMed,4,Текст запроса,(pubmed[tiab] replicat*[tiab] search*[tiab]) 1600/01/01:2018/11/25[crdt],,,59,Комментарий,"По первым шести записям в скрининге складывается представление, что запрос нуждается в доработке.
+Хотя может оказаться, что и нет.
+Все же мало еще проскринено (по замечанию Светланы).
+Поскриним еще.
+Итак, запрос пока тот же.
+Те же 402 записи.
+Продолжаем скрининг.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
