@@ -23,7 +23,88 @@ C (контроль, сравнение) - стандартное консерв
 1. ~~**wrong study duration**~~,
 1. **foreign language**.
 
-## Спланировать поисковый запрос
+## Спланировать поиск источников
+
+### Общий план ~~поисковых~~ поисково-спасательных 😊 работ
+
+```
+06.03.19, 00:14 - Nachrichten in diesem Chat sowie Anrufe sind jetzt mit Ende-zu-Ende-Verschlüsselung geschützt. Tippe für mehr Infos.
+06.03.19, 00:14 - Павел: The
+search plan should include searching a range of biblio-
+graphic databases as well as additional sources, for
+example, study registers, gray literature sources, citation
+databases, and related article searching; as well as contact-
+ing experts and/or manufacturers
+06.03.19, 00:14 - Павел: McGowan 2016 со ссылкой на кокрейновское руководство 5.1.
+06.03.19, 00:15 - Павел: Просто хорошая фраза, использую ее.
+06.03.19, 00:15 - Павел: Места поиска:
+06.03.19, 00:17 - Павел: 1. Библиографичекие БД.
+2. Регистры исследований.
+3. Серая литература.
+4. Базы цитирований.
+5. Кнопка «Похожие статьи».
+6. Контакт с экспертами/производителями.
+06.03.19, 00:19 - Павел: *7. Списки литературы включенных статей и обзоров на тему.
+06.03.19, 00:20 - Павел: Это я готовлюст рецензировать Вашу пабмедовскую стратегию по PRESS.
+06.03.19, 00:22 - Павел: pubmed.gov/27005575
+06.03.19, 00:22 - Павел: И соответствующий разъяснительный документ:
+06.03.19, 00:23 - Павел: https://www.cadth.ca/sites/default/files/pdf/CP0015_PRESS_Update_Report_2016.pdf
+06.03.19, 00:55 - Павел: It should be noted that PRESS focuses on the quality of the Boolean search and is only one 
+aspect of a comprehensive search for SRs and HTAs. Other important aspects include the 
+search plan, search validation, and search reporting (Figure 1).
+06.03.19, 00:57 - Павел: Еще одна хорошая фраза (на этот раз из McGowan 2016, который E&E).
+06.03.19, 00:57 - Павел: То есть поиск включает:
+06.03.19, 00:58 - Павел: 1. План поиска.
+2. Валидация поиска.
+3. Подготовка отчета о поиске.
+06.03.19, 00:59 - Павел: Где вот это, в свою очередь, относится к плану поиска.
+06.03.19, 00:59 - Павел: Other validation approaches include reaching data saturation,7,8 testing 
+the search of the main database against eligible studies identified from any source at the 
+conclusion of the screening process or prior to updating,9
+and testing using a related article and 
+simple search protocol.
+10
+06.03.19, 01:00 - Павел: Это про валидацию поиска: один из подходов — рецензирование, а это еще их ряд.
+06.03.19, 01:03 - Павел: 7. Finfgeld-Connett D, Johnson ED. Literature search strategies for conducting knowledge-building 
+and theory-generating qualitative systematic reviews. J Adv Nurs. 2013;69(1):194-204. 
+http://www.ncbi.nlm.nih.gov/pubmed/22591030.
+8. Booth A. How much searching is enough? Comprehensive versus optimal retrieval for technology 
+assessments. Int J Technol Assess Health Care. 2010;26(4):431-435.
+9. Sampson M, Mcgowan J. Inquisitio validus Index Medicus : A simple method of validating 
+MEDLINE systematic review searches. Res Synth Methods. 2011;2(2):103-109. 
+http://onlinelibrary.wiley.com/doi/10.1002/jrsm.40.
+10. Waffenschmidt S, Janzen T, Hausner E, Kaiser T. Simple search techniques in PubMed are 
+potentially suitable for evaluating the completeness of systematic reviews. J Clin Epidemiol. 
+2013;66(6):660-665.
+11. Lane D, Dykeman J, Ferri M, Goldsmith CH, Stelfox HT. Capture-mark-recapture as a tool for 
+estimating the number of articles available for systematic reviews in critical care medicine. J Crit 
+Care. January 2013. http://www.ncbi.nlm.nih.gov/pubmed/23312123.
+12. Liberati A, Altman DG, Tetzlaff J, et al. The PRISMA statement for reporting systematic reviews 
+and meta-analyses of studies that evaluate health care interventions: explanation and elaboration. 
+PLoS Med. 2009;6(7):e1000100.
+13. Harbour J, Fraser C, Lefebvre C, et al. Reporting methodological search filter performance 
+comparisons: A literature review. Health Info Libr J. 2014;31(3):176-194.
+14. Booth A. “Brimful of STARLITE”: toward standards for reporting literature searches. J Med Libr 
+Assoc. 2006;94(4):421-429, e205. 
+http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1629442&tool=pmcentrez&rendertype=
+abstract.
+15. Fehrmann P, Thomas J. Comprehensive computer searches and reporting in systematic reviews. 
+Res Synth Methods. 2011;2(1):15-32.
+06.03.19, 01:03 - Павел: Estimating the true number of relevant articles using capture-recapture rates has been 
+proposed.
+8,11Finally, accurate reporting of all aspects of the search is necessary to facilitate 
+critical appraisal and to allow replication and updating of the search.12–15
+06.03.19, 01:04 - Павел: Вот теперь рисуется полноценное представление о _поиске_ ~литературы~ исследований как этапе обзора литературы.
+```
+
+С учетом вышеизложенного:
+
+* Из БД явно не хватает eLIBRARY.RU.
+* Остальные места поиска — совсем не представлены.
+* Хорошо бы рассмотреть валидацию представленных стратегий не только путем рецензирования, но и более объективными способами.
+* Хорошо бы подготовить шаблон отчета о поиске на основании PRISMA с ее расширениями (помним также про PRISMA-S, которая все еще в разработке), MECIR и специальных гайдов по написанию отчетов о поисках (в частности см. выше, плюс из недавнего рейда в Экватор, 1d7e3eecb4e0fb630596ac4bd91b4b79002a0579).
+
+Нет шансов, что удастся это сделать сейчас ввиду жестких сроков по апрелю, но это не отменяет того, что это _нужно_ сделать.
 
 ### Поисковая стратегия в PubMed
 
@@ -82,7 +163,8 @@ C -­‐ Revision(s) required
 > Are unconventional or complex strategies explained?
 
 
-Boolean and proximity operators (these vary based on search service)
+Boolean and proximity operators
+ (these vary based on search service)
 
 A -­‐No revisions
 B -­‐ Revision(s) suggested
