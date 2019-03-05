@@ -22,3 +22,19 @@ C (контроль, сравнение) - стандартное консерв
 1. **wrong outcome**,
 1. ~~**wrong study duration**~~,
 1. **foreign language**.
+
+## Спланировать поисковый запрос
+
+### Поисковая стратегия в PubMed
+
+```
+Текст запроса: (("Spinal Curvatures"[Mesh]) AND "Orthopedic Procedures"[Mesh]) AND "Quality of Life"[Mesh]
+```
+Результат: 211 статей
+
+### Поисковая стратегия в Cochrane Library
+
+```
+Текст запроса: scoliosis
+```
+Результат: 5 статей, из них 1 по интересующей теме - bettany-saltikov2015
