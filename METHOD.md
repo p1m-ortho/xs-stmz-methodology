@@ -1,24 +1,7 @@
-Организовать бекап БД #1
- Open	pussiatoday opened this issue 16 days ago · 0 comments
-Comments
-Assignees
- @pussiatoday pussiatoday
+# METHOD.md
 
-Labels
-None yet
-Milestone
-No milestone
-Notifications
- Unsubscribe
-You’re receiving notifications because you were assigned.
-1 participant
-@pussiatoday
- Lock conversation
-  Pin issue  
- Transfer issue Beta
- Delete issue Beta
-@pussiatoday
-  Member
-pussiatoday commented 16 days ago
-No description provided.
- @pussiatoday pussiatoday self-assigned this 16 days ago
+## Срыв конфиденциальности личных данных пациентов
+
+Обнаружил, что был публично доступен список ФИО некоторого числа пациентов с годом рождения или возрастом и номером истории болезни с момента публикации ссылки на форму добавления оценок (31491b3e4bd03494723f4a503e52d519e7ba2018; тогда список не содержал ни одного пациента) по нынешнее время.
+
+Сейчас доступ к этой форме закрыл — дыра в конфиденциальности ликвидирована.
