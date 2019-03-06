@@ -135,7 +135,7 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 
 > Только что успешно реплицировал по приведенному запросу (211 записей, `pubmed_result.xml` прилагаю).
 >
-> Запрос с уже включенным ограничением по дате: `1600/01/01:2019/03/04[mhda] (("Spinal Curvatures"[Mesh]) AND "Orthopedic Procedures"[Mesh]) AND "Quality of Life"[Mesh]` — возвращает те же 211 записей.
+> Запрос с уже включенным ограничением по дате: `1600/01/01:2019/03/04[mhda] (("Spinal Curvatures"[Mesh]) AND "Orthopedic Procedures"[Mesh]) AND "Quality of Life"[Mesh]` — возвращает те же 211 записей (почему дата здесь на 2 дня меньше текущей, см. в 0f990384d4548f3fcf80607d65da6bbc8fb1fd6c).
 >
 > Предлагаю эту правку включить в сам запрос для большей прозрачности для воспроизведения.
 
