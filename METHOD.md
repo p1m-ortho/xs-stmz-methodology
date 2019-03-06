@@ -150,7 +150,7 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 
 ПВЖ:
 
-> Реплицировал только что поиск с учетом представленного ССС текста запроса (Cochrane Database of Systematic Reviews Issue 3 of 12, March 2019; Cochrane Central Register of Controlled Trials Issue 3 of 12, March 2019); пошаговую стратегию с количествами результатов см. в `20190306_search_manager_search.txt` (дата и время запроса там почему-то GMT+0000).
+> Реплицировал только что поиск с учетом представленного ССС текста запроса (Cochrane Database of Systematic Reviews Issue 3 of 12, March 2019; Cochrane Central Register of Controlled Trials Issue 3 of 12, March 2019); пошаговую стратегию с количествами результатов см. в `20190306_search_manager_search.txt` (дата и время запроса там почему-то GMT+0000, причем ранее все в той же [Cochrane Library через публичный интерфейс Wiley](https://www.cochranelibrary.com/advanced-search/search-manager) было GMT+0800: 3da64d2120e1abea35e11d3c58c2252bd8cea3b1; я еще раз перепроверил: ошибки нет; вероятно, причина в том, что в тот раз я был залогинен, а в этот — нет; надо будет поискать настройки часового пояса у себя в аккаунте).
 
 > Не сходится число результатов по `(scoliosis):ti,ab,kw` с приведенным выше ССС (5 записей):
 >
