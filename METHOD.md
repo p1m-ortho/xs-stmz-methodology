@@ -134,11 +134,23 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 
 > Реплицировал только что поиск с учетом представленного ССС текста запроса (Cochrane Database of Systematic Reviews Issue 3 of 12, March 2019; Cochrane Central Register of Controlled Trials Issue 3 of 12, March 2019); пошаговую стратегию с количествами результатов см. в `20190306_search_manager_search.txt` (дата и время запроса там почему-то GMT+0000).
 
-> Не сходится число результатов с приведенным выше ССС (5 записей):
+> Не сходится число результатов по `(scoliosis):ti,ab,kw` с приведенным выше ССС (5 записей):
 >
 > * CDSR (8 Reviews + 2 Protocols): 10 записей;
 > * CENTRAL: 996 записей.
 > * Итого в The Cochrane Library: 1006 записей.
+>
+> При этом по `(scoliosis):ti` число обзоров сходится с приведенным ССС:
+>
+> * CDSR (5 Reviews + 1 Protocols): 6 записей;
+> * CENTRAL: 663 записи.
+> * Итого в The Cochrane Library: 669 записей.
+>
+> При этом при изучении результатов по 5 (в `citation-export.bib` прилагаю) одна из записей — [[@Bettany‐Saltikov2015]](https://pubmed.gov/25908428), что соответствует данным ССС.
+>
+> Таким образом, стратегию считаю воспроизведенной удачно.
+>
+> Для обеспечения успешной воспроизводимости необходимо дополнить оригинальный отчет о поиске датой поиска, точным указанием базы и ее выпуска (Cochrane Database of Systematic Reviews Issue 3 of 12, March 2019) с указанием, что поиск только в пределах Reviews, но не Protocols.
 
 ## Приложения
 
