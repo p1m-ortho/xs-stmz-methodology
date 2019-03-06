@@ -136,7 +136,7 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 
 > Не сходится число результатов с приведенным выше ССС (5 записей):
 >
-> * CDSR (Reviews + Protocols): 10 записей;
+> * CDSR (8 Reviews + 2 Protocols): 10 записей;
 > * CENTRAL: 996 записей.
 > * Итого в The Cochrane Library: 1006 записей.
 
