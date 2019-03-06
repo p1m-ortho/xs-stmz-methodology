@@ -156,7 +156,7 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 > * CENTRAL: 663 записи.
 > * Итого в The Cochrane Library: 669 записей.
 >
-> При этом при изучении результатов по 5 (в `citation-export.bib` прилагаю) одна из записей — [[@Bettany‐Saltikov2015]](https://pubmed.gov/25908428), что соответствует данным ССС.
+> При этом при изучении результатов по 5 (в `citation-export.bib` прилагаю) одна из записей — [[@BettanySaltikov2015]](https://pubmed.gov/25908428), что соответствует данным ССС.
 >
 > Таким образом, стратегию считаю воспроизведенной удачно.
 >
