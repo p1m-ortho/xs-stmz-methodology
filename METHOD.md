@@ -163,7 +163,11 @@ UPAT
 
 Оригинальные бумажные бланки опросников используем нижеследующего вида. Вид формы написан строго на их основе. Позднее загрузим копии сюда для сохранности.
 
-[SF-36](http://therapy.irkutsk.ru/doc/sf36.pdf)
+SF-36
+
+[SF-36 по IQOLA-МЦИКЖ, 1998](http://therapy.irkutsk.ru/doc/sf36.pdf)
+
+UPAT
 
 ![UPAT](http://cloverlucky.ru/upload/iblock/269822-golova-bolit-na-makushke-i-oblast-shei.jpg)
 
