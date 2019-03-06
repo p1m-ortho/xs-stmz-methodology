@@ -130,6 +130,16 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 ```
 Результат: 5 статей, из них 1 по интересующей теме - bettany-saltikov2015
 
+ПВЖ:
+
+> Реплицировал только что поиск с учетом представленного ССС текста запроса (Cochrane Database of Systematic Reviews Issue 3 of 12, March 2019; Cochrane Central Register of Controlled Trials Issue 3 of 12, March 2019); пошаговую стратегию с количествами результатов см. в `20190306_search_manager_search.txt` (дата и время запроса там почему-то GMT+0000).
+
+> Не сходится число результатов с приведенным выше ССС (5 записей):
+>
+> * CDSR (Reviews + Protocols): 10 записей;
+> * CENTRAL: 996 записей.
+> * Итого в The Cochrane Library: 1006 записей.
+
 ## Приложения
 
 ### Рецензия на поиск в PubMed (ПВЖ)

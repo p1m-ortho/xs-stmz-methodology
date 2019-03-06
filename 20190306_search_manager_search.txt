@@ -1,0 +1,8 @@
+Search Name:	
+Date Run:	06/03/2019 14:24:33
+Comment:	
+
+ID	Search	Hits
+#1	(scoliosis):ti,ab,kw (Word variations have been searched)	1006
+#2	#1 in Cochrane Reviews, Cochrane Protocols	10
+#3	#1 in Trials	996
