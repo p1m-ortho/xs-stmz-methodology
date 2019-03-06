@@ -131,6 +131,14 @@ OR complex new interfaces are involved OR the peer reviewer specified that there
 
 Результат: 211 статей
 
+ПВЖ:
+
+> Только что успешно реплицировал по приведенному запросу (211 записей, `pubmed_result.xml` прилагаю).
+>
+> Запрос с уже включенным ограничением по дате: `1600/01/01:2019/03/04[mhda] (("Spinal Curvatures"[Mesh]) AND "Orthopedic Procedures"[Mesh]) AND "Quality of Life"[Mesh]` — возвращает те же 211 записей.
+>
+> Предлагаю эту правку включить в сам запрос для большей прозрачности для воспроизведения.
+
 ### Поисковая стратегия в Cochrane Library
 
 ПВЖ: также планирую рецензировать; после пабмедовской стратегии.
