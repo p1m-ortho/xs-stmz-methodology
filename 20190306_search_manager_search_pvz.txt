@@ -1,9 +1,9 @@
 Search Name:	
-Date Run:	06/03/2019 14:28:29
+Date Run:	06/03/2019 16:40:06
 Comment:	
 
 ID	Search	Hits
-#1	(scoliosis):ti (Word variations have been searched)	669
+#1	(scoliosis):ti	669
 #2	#1 in Cochrane Reviews, Cochrane Protocols	6
 #3	#1 in Cochrane Reviews	5
 #4	#1 in Cochrane Protocols	1
