@@ -2,6 +2,8 @@
 
 ## Финальный план по завершению работы над тезисами
 
+**Сроки: срок написания финального варианта тезисов смещаем с утра на день 08.03, причины ясны из истории коммитов по веткам.**
+
 Финальный [почти наверняка](https://ru.wikipedia.org/wiki/Почти_достоверное_событие).
 
 Это общий план, персонализированные для 5 из 5 авторов см.: [ЭБД](https://github.com/p1m-ortho/xa-led-p1m-apr-conference/blob/b18c821becc09b0f77061bcc63ab5f32791863b5/METHOD.md#финальный-план), [САС](https://github.com/p1m-ortho/xa-led-p1m-apr-conference/blob/888ba434d1b5338257f55216deb8bf6ee503e574/METHOD.md#финальный-план), [ССС](https://github.com/p1m-ortho/xa-led-p1m-apr-conference/blob/f054eee42f3904d1525d6e9a751a1cf9c7c8f8b0/METHOD.md#финальный-план), [РАБ](https://github.com/p1m-ortho/xa-led-p1m-apr-conference/blob/a943e67b44512ab5a2c3662fcc366f971d9661a2/METHOD.md#финальный-план), [НТМ](https://github.com/p1m-ortho/xa-led-p1m-apr-conference/blob/b37e58d41bf18a20c98732771333db9769f72246/METHOD.md#финальный-план).
