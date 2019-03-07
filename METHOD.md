@@ -4,19 +4,137 @@
 
 ### Актуальность
 
-Есть качественный и свежий сисобзор по эффективности вертебропластики, который не рекомендует дальше исследовать эффективность, но рекомендует исследовать осложнения. Бакбайндер изучили РКИ, но НРИ даже не искали, поэтому нужно убедиться, что нет аналогичных СО по НРИ. То есть нужно выполнить поиск литературы. С другой стороны, нужно выполнить поиск литературы, чтобы найти работы, аналогичные по дизайну планируемой нами работе (опять же чтобы не изобретать велосипед и отталкиваться от них). Поэтому проводим такой двойной поиск на 2 зайцев.
+Совсем недавно вышел качественный систематический обзор R. Buchbinder с соавторами (2018) на тему сравнения эффективности вертебропластики и других методов при остеопоротических компрессионных переломах позвонков. Авторы не нашли значимой разницы между ВП и плацебо по пациент-значимым результатам через 1–2 недели, 1 месяц, 3 месяца, 6 месяцев и 1 год, в том числе при анализе в подгруппах с давностью боли 6 недель и менее и более 6 недель. Это заставляет задуматься о том, что ВП не стоит применять у изученной популяции.
+
+Авторы не рекомендует дальше исследовать эффективность, но рекомендуют исследовать осложнения. R. uchbinder с соавторами изучили РКИ, но НРИ даже не искали, поэтому нужно убедиться, что нет аналогичных СО по НРИ. То есть нужно выполнить поиск литературы. С другой стороны, нужно выполнить поиск литературы, чтобы найти работы, аналогичные по дизайну планируемой нами работе (опять же чтобы не изобретать велосипед и отталкиваться от них). Поэтому проводим такой двойной поиск на 2 зайцев.
 
 Продолжение следует.
 
-### Задачи
+### Релеватные руководства по проведению и написанию исследования
 
-### Методы
+> ПВЖ: полужирным здесь выделяю ссылки, здесь добавленные впервые (ранее не фигурировали в истории коммитов).
+
+Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): Explanation and Elaboration ([[@Vandenbroucke2007]](https://doi.org/10.1097/EDE.0b013e3181577511)).
+
+Reporting to Improve Reproducibility and Facilitate Validity Assessment for Healthcare Database Studies V1.0 ([[@Wang2017]](http://dx.doi.org/10.1016/j.jval.2017.08.3018)).
+
+**Spinal Adverse Events Severity System, version 2 (SAVES-V2): inter- and intraobserver reliability assessment ([[@Rampersaud2016]](https://pubmed.gov/27058499)).**
+
+> ПВЖ: откуда взял: из [[@Rosenthal2015]](https://pubmed.gov/25665678) (см. 1d7e3eecb4e0fb630596ac4bd91b4b79002a0579) поднял в PubMed [[@Clavien2009]](https://pubmed.gov/19638912), откуда из Similar articles перешел из интереса к [[@Sink2012]](https://pubmed.gov/22528378), откуда таким же образом перешел к [[@Rampersaud2010]](https://pubmed.gov/20195203), а оттуда уже таким же образом вышел на [[@Rampersaud2016]](https://pubmed.gov/27058499).
+
+### Методы получения данных из базы
+
+Учитываются основные осложнения: повреждение спинного мозга, сосудистых образований, видимое на МРТ или рентгеновском снимке, выход цемента за пределы тела позвонка (КТ, МРТ, ренгтген подтверждение)
+
+Процесс идентификации и классификации осложнений проведем по ([[@Rampersaud2016]](https://pubmed.gov/27058499)), начиная с шага 2, т. к. в шаге 1 у них описан их материал (10 случаев ПСМТ и 12 случаев ДДЗП с изображениями и возможностью задать вопрос по случаю), который у нас отличается (ряд случаев вертебропластики по любым показаниям, без изображений, сведения ограничены выборкой из базы).
+
+Ниже см. цитаты по оригинальной публикации.
+
+> Based on the available literature and the use of multiple sources of AE capture from surgical societies (e.g., Scoliosis Research Society, North American Spine Society), an AE was defined as any event due to medical or surgical management (but not resulting from underlying disease process or injury) that leads to patient harm or requires additional monitoring or treatment.2,13,17,20,25,26,36,37,40
+
+> 2) Participants were given the definition of an AE and the following 
+tip: in patients with stable preexisting comorbidities, an acute exacerbation related to that condition but not responsive to the patient’s routine medication(s) is considered an AE (e.g., controlled, stable coronary artery disease with good preoperative exercise tolerance followed by postoperative acute myocardial infarction)
+
+```
+TABLE 2. SAVES-V2 intraoperative AE categories
+Intraop AE Category
+1. Allergic reaction
+2. Anesthesia related
+3. Bone implant interface failure requiring revision
+4. Cardiac
+5. Cord injury
+6. Dural tear
+7. Hardware malposition requiring revision
+8. Hypotension (systemic <85 mm Hg for 15 min)
+9. Massive blood loss (>5 L in 24 hrs or >2 L in 3 hrs)
+10. Nerve root injury
+11. Pressure sores
+12. Vascular injury
+13. Airway/ventilation
+14. Visceral injury
+15. Other (specify:
+```
+
+```
+TABLE 3. SAVES-V2 postoperative AE categories
+Postop AE Category
+1. Cardiac arrest/failure/arrhythmia
+2. Construct failure with loss of correction
+3. Construct failure without loss of correction
+4. CSF leak/meningocele
+5. Deep vein thrombosis
+6. Deep wound infection
+7. Delirium
+8. Dysphagia
+9. Dysphonia
+10. Gastrointestinal bleeding
+11. Hematoma
+12. Myocardial infarction
+13. Neurologic deterioration ≥1 motor grade in ASIA motor scale
+14. Nonunion
+15. Pneumonia
+16. Postop neuropathic pain
+17. Pressure sores
+18. Pulmonary embolism
+19. Superficial wound infection
+20. Systemic infection
+21. Urinary tract infection
+22. Wound dehiscence
+23. Other (specify: )
+Estimated effect of AE on LOS:
+□ None
+□ 1–2 days
+□ 3–7 days
+□ 8–14 days
+□ 15–28 days
+□ More than 28 days
+```
+
+> 3) The participants were then asked to independently indicate whether an AE had occurred in the case and 4) to independently identify the specific AE from the provided list (Tables 2 and 3).
+
+> …an “other” category to enable 
+free text for naming an AE that is not identified on the 
+list.
+
+> More than 1 AE could be identified.
+
+```
+TABLE 1. SAVES-V2 severity grades
+Severity 
+of AE Clinical Impact
+1 AE does not require treatment & has no adverse effect
+2 AE requires minor invasive (e.g., Foley catheter, nasogastric 
+tube) or simple treatment but has no long-term effect
+3 AE requires invasive (e.g., surgery) or complex treatment 
+(e.g., monitored bed) & is most likely to have a temporary 
+(<6 mos) adverse effect on outcome
+4 AE requires invasive (e.g., surgery) or complex treatment 
+(e.g., monitored bed) & is most likely to have a prolonged 
+(>6 mos) adverse effect on outcome*
+5 Significant neural injury (i.e., 1 or more grade deterioration 
+in ASIA grade) or serious life- or limb-threatening event 
+or any sentinel event†
+6 AE resulting in death
+```
+
+> 5) Participants then graded the severity of the AE(s) using the SAVES-V2 definitions provided (Table 1).
+
+> 6) Finally, the participants 
+were asked to estimate the effect of the AE on hospital length of stay (LOS) based on the general LOS for the type of procedure in the specific patient presented. Six responses were possible: none, 1–2 days, 3–7 days, 8–14 days, 15–28 days, and more than 28 days. The following instruction was provided: if multiple AEs occur simultaneously or in proximity, then report the most significant or cumulative effect if temporally distinct events occur. For AEs that require readmission for management, the effect of the AE on LOS should be reported as the entire LOS of the readmission.
+
+Согласие по каждому из шагов процесса в оригинальной статье было, в целом, если исходить из 95%-ных ДИ, плохим, но всегда было значимым, поэтому также пройдем по всем шагам.
+
+### Методы трансформации и анализа данных
 
 ### Результаты
+
+Такое-то осложнение встречается на столько-то раз чаще, по сравнению с контрольной группой
 
 ### Обсуждение
 
 ### Выводы
+
+ВП менее\на столько же безопасна по сравнению с консервативным лечением.
 
 ### Практические рекомендации
 
