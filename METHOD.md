@@ -63,7 +63,7 @@
 
 Рассчитаем относительный риск (RR) и его 95%-ный ДИ, пользуясь [калькулятором RR от CCRB CUHK](https://www2.ccrb.cuhk.edu.hk/stat/confidence%20interval/CI%20for%20relative%20risk.htm).
 
-Рассчитаем число лиц, подвергаемых хирургическому лечению, для возникновения одного неблагоприятного исхода (NNH) и его 95%-ный ДИ, пользуясь [калькулятором NNT от MedCalc](https://www.medcalc.org/calc/relative_risk.php).
+Рассчитаем число лиц, подвергаемых хирургическому лечению, для возникновения одного осложнения (NNH) и его 95%-ный ДИ, пользуясь [калькулятором NNT от MedCalc](https://www.medcalc.org/calc/relative_risk.php).
 
 Рассчитаем, пользуясь [калькулятором хи-квадрат от Jeremy Stangroom](https://www.socscistatistics.com/tests/chisquare2/default2.aspx), значение статистики хи-квадрат в тесте на независимость (1 степень свободы) и p-значение (2 числа).
 
