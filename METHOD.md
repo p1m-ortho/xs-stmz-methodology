@@ -79,7 +79,7 @@
 
 Обсудим вопросы риска систематической ошибки, опираясь на схему ROBINS-I ([[@Sterne2016]](https://doi.org/10.1136/bmj.i4919)).
 
-> ПВЖ: про ROBINS-I см. ниже здесь в METHOD.md.
+> ПВЖ: про ROBINS-I см. в METHOD.md в других ветках xa-led-p1m-apr-conference.
 
 ### Выводы
 
