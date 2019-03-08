@@ -10,6 +10,53 @@
 | Спинальная КТ       | 3294          |
 | Спинальная операция | 646           |
 
+При попытке удалить 100%-ные дубликаты в офисных программах (Excel 2016 for Mac, Calc 4.1.5) столкнулся с вылетами и зависаниями.
+
+Поэтому решил загрузить все записи в БД (MySQL), и уже там продолжить с ними работу.
+
+Структура БД:
+
+```sql
+CREATE TABLE `20190307_2326_xc` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mrn` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `upi` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `last` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `first` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `middle` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sex` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dob` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `doa` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dod` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `note_specialty` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `note_type` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `note_text` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone_home` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone_mobile` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone_comment` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `registration_address` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `home_address` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `icd10_code` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ward_field` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_code` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_date` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_asa` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_acuteness` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_name` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_type` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_timing` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_an_type` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_an_start` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_an_end` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `sx_postop_dx` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `free_text` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `spinality_type` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+Пришлось для этого добавить поле ID в оригинальную таблицу, убрать шапку (оригинальный запрос возвращает еще свое название и параметры в первых строчках таблицы) и строку заголовков.
+
 ## Частота осложнений операций на позвоночнике против группы консервативного лечения: протокол исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
 ## Примечание
