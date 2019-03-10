@@ -1448,6 +1448,63 @@ SELECT @totalLabel, COUNT(*) FROM
 
 Получим хотя бы предварительные данные.
 
+Смотрю число релевантных пациентов по каждому из протоколов:
+
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`relevance1` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`relevance2` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`relevance3` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`relevance4` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+Обстоятельство, что нужно, чтобы пациенты с хотя бы одной релевантной записью выдавались, учел.
+
+Выполняю: ОК.
+
+Вернул:
+
+```
+@protocol1Label	COUNT(*)
+ВП	10
+Деформации	0
+ДДЗП ШОП	8
+Инфекции	9
+```
+
+Теперь посмотрю число пациентов с осложнениями:
+
 ## Частота осложнений операций на позвоночнике против группы консервативного лечения: протокол исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
 ## Примечание
