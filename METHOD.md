@@ -47,7 +47,7 @@ Timestamp: 2019-03-10 11:48:14 UTC
 
 Добавил в «Новую оценку» специальное поле `upat_sf36_trng`, куда внесу сейчас 113 новых (пустых) записей, в которых заполню это поле сгенерированной последовательностью.
 
-Сортировку по умолчанию ставлю по этому полю.
+Сортировку по умолчанию ставлю по ~~этому полю~~ полю ID по возрастанию.
 
 Копипаста из FormTools теперь выглядит так:
 
@@ -142,6 +142,133 @@ Timestamp: 2019-03-10 11:48:14 UTC
 ```
 
 Доступ к форме на момент внесения изменений пока закрыл.
+
+Структура таблицы «Новая оценка» в настоящий момент:
+
+```sql
+CREATE TABLE `ft_form_1` (
+  `submission_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `record` varchar(255) DEFAULT NULL,
+  `t_m` varchar(255) DEFAULT NULL,
+  `t_per` varchar(255) DEFAULT NULL,
+  `t_pee` varchar(255) DEFAULT NULL,
+  `t_ier` varchar(255) DEFAULT NULL,
+  `t_iee_ll` varchar(255) DEFAULT NULL,
+  `t_iee_ul` varchar(255) DEFAULT NULL,
+  `iv_m` varchar(255) DEFAULT NULL,
+  `iv_per` varchar(255) DEFAULT NULL,
+  `iv_pee` mediumtext,
+  `iv_ier` varchar(255) DEFAULT NULL,
+  `iv_iee_ll` varchar(255) DEFAULT NULL,
+  `iv_iee_ul` varchar(255) DEFAULT NULL,
+  `dv_m` varchar(255) DEFAULT NULL,
+  `dv_per` varchar(255) DEFAULT NULL,
+  `dv_pee` mediumtext,
+  `dv_ier` varchar(255) DEFAULT NULL,
+  `dv_iee_ll` varchar(255) DEFAULT NULL,
+  `dv_iee_ul` varchar(255) DEFAULT NULL,
+  `submission_date` datetime NOT NULL,
+  `last_modified_date` datetime NOT NULL,
+  `ip_address` varchar(15) DEFAULT NULL,
+  `is_finalized` enum('yes','no') DEFAULT 'yes',
+  `t_m_ft` varchar(255) DEFAULT NULL,
+  `iv_m_ft` varchar(255) DEFAULT NULL,
+  `dv_m_ft` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q1` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q2` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q3` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q4` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q5` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q6` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q7` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q8` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q9` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q10` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q11` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q12` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q13` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q14` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q15` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q16` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q17` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q18` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q19` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q20` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q21` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q22` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q23` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q24` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q25` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q26` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q27` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q28` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q29` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q30` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q31` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q32` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q33` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q34` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q35` varchar(255) DEFAULT NULL,
+  `dv_m_sf36_q36` varchar(255) DEFAULT NULL,
+  `dv_m_upat_0_10_point` varchar(255) DEFAULT NULL,
+  `dv_m_upat_0_5_face` varchar(255) DEFAULT NULL,
+  `dv_m_upat_0_5_disability` varchar(255) DEFAULT NULL,
+  `upat_sf36_trng` mediumint(8) unsigned DEFAULT NULL,
+  PRIMARY KEY (`submission_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+Для лучшего понимания смысла полей можно обратиться к xs-stmz-methodology и xc-led-dzhanelidze-proms-and-croms.
+
+Запрос на внесение:
+
+```sql
+INSERT INTO `ft_form_1` (`upat_sf36_trng`, `submission_date`)
+VALUES (94, NOW()), (67, NOW()), (92, NOW()), (48, NOW()), (18, NOW()), (36, NOW()), (47, NOW()), (2, NOW()), (109, NOW()), (41, NOW()), (103, NOW()), (89, NOW()), (81, NOW()), (60, NOW()), (95, NOW()), (66, NOW()), (14, NOW()), (15, NOW()), (76, NOW()), (57, NOW()), (105, NOW()), (106, NOW()), (74, NOW()), (79, NOW()), (5, NOW()), (88, NOW()), (93, NOW()), (96, NOW()), (25, NOW()), (33, NOW()), (30, NOW()), (77, NOW()), (28, NOW()), (8, NOW()), (108, NOW()), (44, NOW()), (73, NOW()), (29, NOW()), (21, NOW()), (27, NOW()), (97, NOW()), (68, NOW()), (107, NOW()), (34, NOW()), (31, NOW()), (58, NOW()), (71, NOW()), (39, NOW()), (63, NOW()), (100, NOW()), (49, NOW()), (85, NOW()), (64, NOW()), (17, NOW()), (80, NOW()), (9, NOW()), (111, NOW()), (59, NOW()), (72, NOW()), (70, NOW()), (3, NOW()), (52, NOW()), (110, NOW()), (24, NOW()), (32, NOW()), (23, NOW()), (53, NOW()), (19, NOW()), (45, NOW()), (42, NOW()), (65, NOW()), (10, NOW()), (7, NOW()), (1, NOW()), (12, NOW()), (4, NOW()), (38, NOW()), (86, NOW()), (51, NOW()), (11, NOW()), (84, NOW()), (6, NOW()), (40, NOW()), (82, NOW()), (113, NOW()), (62, NOW()), (99, NOW()), (20, NOW()), (69, NOW()), (112, NOW()), (104, NOW()), (50, NOW()), (46, NOW()), (35, NOW()), (54, NOW()), (26, NOW()), (61, NOW()), (98, NOW()), (101, NOW()), (13, NOW()), (22, NOW()), (56, NOW()), (90, NOW()), (78, NOW()), (75, NOW()), (55, NOW()), (87, NOW()), (91, NOW()), (16, NOW()), (102, NOW()), (43, NOW()), (37, NOW()), (83, NOW())
+```
+
+Успех, ожидаемых 113 записей внесено.
+
+Проверяю: успешно внесено в таблицу, дата добавления проставлена, правильная, в FormTools отбражаются.
+
+Вот только старые записи идут вперед этих, что неудивительно, коль скоро сортировка — ~~по TRNG по возрастанию~~, у старых записей, с очевидностью, значение `NULL` в этом поле. Сортировать по TRNG, без сомнения, было глупостью, коль скоро мы хотим, чтобы записи следовали в случайном порядке; сделал сортировку по ID.
+
+Поэтому пока поставлю для старых записей `NULL` в поле `is_finalized`, и тогда FormTools перестанет их видеть.
+
+По завершении работы всегда можно будет вернуть им `yes`, поскольку эти 113 однозначно определяются, во-первых, непустым `upat_sf36_trng`, а во-вторых, одной и той же известной `submission_date`.
+
+Так что запрос:
+
+```sql
+UPDATE `ft_form_1`
+SET `is_finalized` = NULL
+WHERE `upat_sf36_trng` IS NULL
+```
+
+Успешно обновил ожидаемые 24 записи.
+
+Проверяю в FormTools: успешно пропали оттуда, теперь там 113 записей.
+
+Кнопку добавления записей также пока временно отключаю.
+
+Включаю назад доступ к форме — а нет, момент.
+
+Ха, а сортировка по TRNG — это нонсенс; коль скоро мы хотим, чтобы записи следовали в случайном порядке
+
+Ссделал сортировку по ID.
+
+Теперь точно все в порядке:
+
+* в «Новой оценке» сейчас 113 пустых записей,
+* порядок их следования совпадает со случайной последовательностью, сгенерированной выше,
+* добавление новых записей отключено,
+* редактирование поля TRNG также отключил,
+* из группы «Объект измерения» все поля, кроме «TRNG» и «Запись» (список их см. выше в копипасте), убрал: они сейчас не нужны, будут только мешаться,
+* возможность ручной сортировки по всем полям тоже отключил.
+
+Все, можно приступать к заполнению.
+
+Включаю назад доступ к форме — готово.
 
 ## Качество жизни (SF-36) и уровень боли (UPAT) в общей популяции стационарных пациентов с травмами и заболеваниями позвоночника: протокол поперечного исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
