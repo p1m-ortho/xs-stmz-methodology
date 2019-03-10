@@ -803,10 +803,10 @@ WHERE `regex1` IS NULL OR `regex2` IS NULL OR `regex3` IS NULL OR `regex4` IS NU
 
 | Протокол   | Регулярное выражение                                                                                       | Имеют вхождение, записи | Не имеют вхождений, записи | Итого записей                       |
 |------------|------------------------------------------------------------------------------------------------------------|-------------------------|----------------------------|-------------------------------------|
-| ВП         | `пластик|ПЛАСТИК|Пластик|Цемент|ЦЕМЕНТ|цемент`                                                             | 105                     | 541                        | 646                                 |
-| Деформации | `деформац|ДЕФОРМАЦ|Деформац|кифо|КИФО|Кифо|лордо|ЛОРДО|Лордо|сколио|СКОЛИО|Сколио`                         | 69                      | 577                        | 646                                 |
-| ДДЗП ШОП   | `шей|ШЕЙ|Шей|[CcСс][12345678]|миело|МИЕЛО|Миело|радикул|РАДИКУЛ|Радикул`                                   | 367                     | 279                        | 646                                 |
-| Инфекции   | `спондилит|СПОНДИЛИТ|Спондилит|дисцит|ДИСЦИТ|Дисцит|остеомиелит|ОСТЕОМИЕЛИТ|Остеомиелит|абсце|АБСЦЕ|Абсце` | 60                      | 586                        | 646                                 |
+| ВП         | пластик&#10072;ПЛАСТИК&#10072;Пластик&#10072;Цемент&#10072;ЦЕМЕНТ&#10072;цемент                                                             | 105                     | 541                        | 646                                 |
+| Деформации | деформац&#10072;ДЕФОРМАЦ&#10072;Деформац&#10072;кифо&#10072;КИФО&#10072;Кифо&#10072;лордо&#10072;ЛОРДО&#10072;Лордо&#10072;сколио&#10072;СКОЛИО&#10072;Сколио                         | 69                      | 577                        | 646                                 |
+| ДДЗП ШОП   | шей&#10072;ШЕЙ&#10072;Шей&#10072;[CcСс][12345678]&#10072;миело&#10072;МИЕЛО&#10072;Миело&#10072;радикул&#10072;РАДИКУЛ&#10072;Радикул                                   | 367                     | 279                        | 646                                 |
+| Инфекции   | спондилит&#10072;СПОНДИЛИТ&#10072;Спондилит&#10072;дисцит&#10072;ДИСЦИТ&#10072;Дисцит&#10072;остеомиелит&#10072;ОСТЕОМИЕЛИТ&#10072;Остеомиелит&#10072;абсце&#10072;АБСЦЕ&#10072;Абсце | 60                      | 586                        | 646                                 |
 | Всего      | —                                                                                                          | 484                     | 3456                       | 3946                                |
 
 Ну и посмотрю то же по пациентам (заодно и по типу спинальности посчитаю пациентов, потому что до этого считал только записи):
@@ -1034,7 +1034,7 @@ WHERE `regex1` = 1 OR `regex2` = 1 OR `regex3` = 1 OR `regex4` = 1
 
 Добавлю строчку в таблицу выше.
 
-И, кстати, в той таблице форматирование поехало за счет того, что регулярки с вертикальной чертой не обособил обратным апострофом — тоже заодно исправляю.
+И, кстати, в той таблице форматирование поехало ~~за счет того, что регулярки с вертикальной чертой не обособил обратным апострофом — тоже заодно исправляю~~. Обратные апострофы не спасли — пришлось заменить вертикальные черты в регулярках HTML-кодом этого символа (`&#10072;`).
 
 А еще я забыл же посчитать число пациентов по вхождениям — тоже сейчас сделаю.
 
@@ -1072,6 +1072,229 @@ WHERE `regex1` != 1 AND `regex2` != 1 AND `regex3` != 1 AND `regex4` != 1
 Сейчас еще дорезюмирую по вхождениям по пациентам и перейду к определению релевантности.
 
 (Забекаплю-ка кстати тоже БД заодно — готово.)
+
+Запрос на число пациентов со вхождениями:
+
+```sql
+SET @regex1ProtocolLabel = 'ВП';
+SET @regex2ProtocolLabel = 'Деформации';
+SET @regex3ProtocolLabel = 'ДДЗП ШОП';
+SET @regex4ProtocolLabel = 'Инфекции';
+SET @totalLabel = 'Всего';
+
+SELECT @regex1ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` = 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex1
+UNION ALL
+SELECT @regex2ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex2` = 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex2
+UNION ALL
+SELECT @regex3ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex3` = 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex3
+UNION ALL
+SELECT @regex4ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex4` = 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex4
+UNION ALL
+SELECT @totalLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` = 1 OR t1.`regex2` = 1 OR t1.`regex3` = 1 OR t1.`regex4` = 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_total
+```
+
+ОК:
+
+```
+@regex1ProtocolLabel	COUNT(*)
+ВП	100
+Деформации	62
+ДДЗП ШОП	343
+Инфекции	46
+Всего	442
+```
+
+Пациентов без вхождений (по регвырам — среди тех, по кому искали: среди «Спинальная операция» только; общее количество — по всем пациентам: «Спинальная операция» плюс смешанная спинальность):
+
+```sql
+SET @regex1ProtocolLabel = 'ВП';
+SET @regex2ProtocolLabel = 'Деформации';
+SET @regex3ProtocolLabel = 'ДДЗП ШОП';
+SET @regex4ProtocolLabel = 'Инфекции';
+SET @totalLabel = 'Всего';
+
+SELECT @regex1ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` IS NOT NULL AND t1.`regex1` = 0
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex1
+UNION ALL
+SELECT @regex2ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex2` = 0
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex2
+UNION ALL
+SELECT @regex3ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex3` = 0
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex3
+UNION ALL
+SELECT @regex4ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex4` = 0
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex4
+UNION ALL
+SELECT @totalLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` != 1 AND t1.`regex2` != 1 AND t1.`regex3` != 1 AND t1.`regex4` != 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_total
+```
+
+~~ОК: возвратил ожидаемые:~~ Нет, не возвратил.
+
+```
+@regex1ProtocolLabel	COUNT(*)
+ВП	473
+Деформации	511
+ДДЗП ШОП	230
+Инфекции	527
+Всего	131
+```
+
+Вот что возвратил:
+
+```
+@regex1ProtocolLabel	COUNT(*)
+ВП	1853
+Деформации	1892
+ДДЗП ШОП	1647
+Инфекции	1911
+Всего	1557
+```
+
+Нашел возможный источник проблемы: 0 в значении регекс-полей надо ставить строкой, вот так: `'0'`.
+
+Тогда все вроде работает:
+
+Исправляю, перезапускаю запрос:
+
+```sql
+SET @regex1ProtocolLabel = 'ВП';
+SET @regex2ProtocolLabel = 'Деформации';
+SET @regex3ProtocolLabel = 'ДДЗП ШОП';
+SET @regex4ProtocolLabel = 'Инфекции';
+SET @totalLabel = 'Всего';
+
+SELECT @regex1ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` IS NOT NULL AND t1.`regex1` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex1
+UNION ALL
+SELECT @regex2ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex2` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex2
+UNION ALL
+SELECT @regex3ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex3` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex3
+UNION ALL
+SELECT @regex4ProtocolLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex4` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_regex4
+UNION ALL
+SELECT @totalLabel, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`regex1` != 1 AND t1.`regex2` != 1 AND t1.`regex3` != 1 AND t1.`regex4` != 1
+    GROUP BY t2.`name`, t2.`year`
+) t3_total
+```
+
+~~ОК, возвратил ожидаемые~~ (для поле «Всего» ожидаемого не было, поскольку его по имеющимся данным не рассчитать из-за смешанной спинальности: надо узнать, сколько вхождений было в пациентах со смешанной спинальностью, а таких данных нет):
+
+Снова не возвратил.
+
+```
+@regex1ProtocolLabel	COUNT(*)
+ВП	473
+Деформации	511
+ДДЗП ШОП	230
+Инфекции	527
+Всего	NA
+```
+
+Вот что возвратил:
+
+```
+@regex1ProtocolLabel	COUNT(*)
+ВП	477
+Деформации	512
+ДДЗП ШОП	247
+Инфекции	531
+Всего	1557
+```
+
+Везде — чуть больше, чем расчетное, но расчетное — только на основании пациентов с чистой «Спинальной операцией», и поэтому следовало вообще-то ожидать, что реальное число _может_ быть чуть больше.
+
+Общее число схождений и несхождений также в сумме не дает 1984, которые фигурировали выше.
+
+В обще, ладно.
+
+Резюме по вхождениям в пациентах пока отменяется: надо тут разбираться, это не по протоколу, а времени нет.
+
+Для идиллии хочу еще запросы по регвырам выше переписать, применив там пользовательские переменные (я что-то тогда сразу и не подумал, что так можно) — тоже на потом: не по протоколу — время не буду тратить.
+
+Так что перехожу к определению релевантности.
 
 ## Частота осложнений операций на позвоночнике против группы консервативного лечения: протокол исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
