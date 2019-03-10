@@ -1556,6 +1556,230 @@ SELECT @protocol4Label, COUNT(*) FROM
 
 Теперь число пациентов без осложнений:
 
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_1` IS NOT NULL AND t1.`ae_bool_1` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_2` IS NOT NULL AND t1.`ae_bool_2` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_3` IS NOT NULL AND t1.`ae_bool_3` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_4` IS NOT NULL AND t1.`ae_bool_4` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+Должно сходиться к расчетному:
+
+```
+@protocol1Label	COUNT(*)
+ВП	8
+Деформации	0
+ДДЗП ШОП	6
+Инфекции	5
+```
+
+Нет, возвращает следующее:
+
+```
+@protocol1Label	COUNT(*)
+ВП	66
+Деформации	66
+ДДЗП ШОП	64
+Инфекции	65
+```
+
+Попробую так:
+
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_1` IS NOT NULL AND t1.`ae_bool_1` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_2` IS NOT NULL AND t1.`ae_bool_2` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_3` IS NOT NULL AND t1.`ae_bool_3` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_4` IS NOT NULL AND t1.`ae_bool_4` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+Нет, то же самое.
+
+Посмотрел записи, которые он выдает, и все сразу стало понятно: не `NULL`, но пустые записи он тоже (естественно) считает (возможно, это же и решение проблемы выше с подсчетом числа пациентов по вхождениям, но сейчас заниматься не буду за недостатком времени).
+
+Корректирую:
+
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_1` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_2` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_3` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_4` = '0'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+Должен вернуть ожидаемые:
+
+```
+@protocol1Label	COUNT(*)
+ВП	8
+Деформации	0
+ДДЗП ШОП	6
+Инфекции	5
+```
+
+Нет, опять не то:
+
+```
+@protocol1Label	COUNT(*)
+ВП	10
+Деформации	0
+ДДЗП ШОП	6
+Инфекции	5
+```
+
+И опять-таки по понятным причинам: если по пациенту есть хотя бы один `'0'`, он совершенно закономерно возвращает эти лишние записи.
+
+Так что топать все равно надо по пути дополнения множества релевантных, только учесть еще и пустые строки — делаю:
+
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_1` IS NOT NULL AND t1.`ae_bool_1` != '' AND t1.`ae_bool_1` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_2` IS NOT NULL AND t1.`ae_bool_2` != '' AND t1.`ae_bool_2` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_3` IS NOT NULL AND t1.`ae_bool_3` != '' AND t1.`ae_bool_3` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(t2.`submission_id`)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_4` IS NOT NULL AND t1.`ae_bool_4` != '' AND t1.`ae_bool_4` != '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+Что выдает:
+
+Ха, опять не то:
+
+```
+@protocol1Label	COUNT(*)
+ВП	10
+Деформации	0
+ДДЗП ШОП	7
+Инфекции	7
+```
+
+Короче говоря, похоже, проще сейчас не считать отдельно число без осложнений, а просто получить его вычитанием из общего.
+
+Проблемы с этим быть не должно, потому что запрос на выдачу общего числа пациентов и числа пациентов с осложнениями вроде работает корректно.
+
 ## Частота осложнений операций на позвоночнике против группы консервативного лечения: протокол исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
 ## Примечание
