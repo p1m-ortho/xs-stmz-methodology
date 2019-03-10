@@ -338,7 +338,20 @@ FROM
 ) sf36
 ```
 
-Готово, результаты см. в `sql.csv` (прилагаю).
+Готово, результаты см. в `sql_sf36.csv` (прилагаю).
+
+Теперь UPAT:
+
+```sql
+SELECT
+IF(`dv_m_upat_0_10_point` IS NULL OR `dv_m_upat_0_10_point`='NA',0,`dv_m_upat_0_10_point`) `Боль от 0 до 10, баллы (UPAT)`,
+IF(`dv_m_upat_0_5_face` IS NULL OR `dv_m_upat_0_5_face`='NA',0,`dv_m_upat_0_5_face`) `Боль от 0 до 5, рожицы (UPAT)`,
+IF(`dv_m_upat_0_5_disability` IS NULL OR `dv_m_upat_0_5_disability`='NA',0,`dv_m_upat_0_5_disability`) `Боль от 0 до 5, переносимость (UPAT)`
+FROM `ft_form_1`
+WHERE `is_finalized` = 'yes' AND `record` IS NOT NULL
+```
+
+Готово, результаты см. в `sql_upat.csv` (прилагаю).
 
 ## Качество жизни (SF-36) и уровень боли (UPAT) в общей популяции стационарных пациентов с травмами и заболеваниями позвоночника: протокол поперечного исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
