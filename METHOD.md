@@ -1505,6 +1505,57 @@ SELECT @protocol4Label, COUNT(*) FROM
 
 Теперь посмотрю число пациентов с осложнениями:
 
+```sql
+SET @protocol1Label = 'ВП';
+SET @protocol2Label = 'Деформации';
+SET @protocol3Label = 'ДДЗП ШОП';
+SET @protocol4Label = 'Инфекции';
+
+SELECT @protocol1Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_1` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol1
+UNION ALL
+SELECT @protocol2Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_2` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol2
+UNION ALL
+SELECT @protocol3Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_3` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol3
+UNION ALL
+SELECT @protocol4Label, COUNT(*) FROM
+(
+    SELECT COUNT(*)
+    FROM `ft_form_9` t1 LEFT JOIN `ft_form_2` t2 ON t1.`record_id` = t2.`submission_id`
+    WHERE t1.`ae_bool_4` = '1'
+    GROUP BY t2.`name`, t2.`year`
+) t3_protocol4
+```
+
+ОК. Вернул:
+
+```
+@protocol1Label	COUNT(*)
+ВП	2
+Деформации	0
+ДДЗП ШОП	2
+Инфекции	4
+```
+
+Теперь число пациентов без осложнений:
+
 ## Частота осложнений операций на позвоночнике против группы консервативного лечения: протокол исследования рутинных клинических данных центра неотложной взрослой хирургии позвоночника
 
 ## Примечание
