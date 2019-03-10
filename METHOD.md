@@ -194,18 +194,44 @@ Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): E
 
 Изначальное число опросников: 121. После решения объединить в одну единицу опросники, собранные у одного человека в одну дату, Число единиц сократилось до 113 (по причине объединения опросников, собранных в один день проспективно и ретроспективно). Единицы, собранные исключительно ретроспективно, коорые не являются опросниками SF-36 и UPAT, а также невыданные по каким-либо причинам опросники не подходят для внесения их в качестве новых оценок. Исходя из этого, были исключены 3 единицы: 1 взят ретроспективно, 1 - ASIA, 1 - не выдан. Итого для внесения - 110 единиц.
 
-Новая комбинация случайных чисел с random.org: 
-Set 1: 103, 2, 15, 109, 60, 100, 96, 51, 8, 106
-Set 2: 97, 35, 78, 62, 46, 83, 56, 32, 86, 50
-Set 3: 48, 92, 17, 41, 10, 31, 63, 21, 53, 42
-Set 4: 35, 53, 81, 43, 23, 20, 45, 61, 73, 86
-Set 5: 40, 60, 9, 36, 2, 27, 70, 68, 72, 44
-Set 6: 43, 58, 55, 100, 40, 66, 27, 60, 101, 84
-Set 7: 57, 68, 25, 108, 13, 74, 56, 48, 24, 36
-Set 8: 27, 20, 106, 1, 21, 19, 16, 5, 111, 105
-Set 9: 76, 72, 46, 32, 104, 15, 19, 83, 16, 24
-Set 10: 17, 11, 27, 44, 68, 90, 89, 5, 6, 60
-Set 11: 38, 83, 86, 104, 35, 112, 36, 73, 32, 49
+Новая комбинация случайных чисел с [random.org](): 
+
+Параметры для ясности:
+
+```
+Step 1: The Sets
+Generate 1 set(s) with 113 unique random integer(s) in each.
+
+Each integer should have a value between 1 and 113 (both inclusive; limits ±1,000,000,000).
+
+The total number of integers must be no greater than 10,000.
+
+Step 2: Display Options
+ 
+ Each set will be printed on a separate line. You can choose from the following extra options:
+ V Number the sets sequentially
+ V Use commas to separate the set members
+ X Sort the members of each set in ascending order
+
+You can select the order in which the sets are printed:
+ V Print the sets in the order they were generated
+ 0 Order the sets by the values that occur in them (in this case, you should also consider sorting the members of each set)
+ 0 Print the sets in random order
+
+ Step 3: Go!
+Be patient! It may take a little while to generate your sets...
+```
+
+Результат:
+
+```
+You requested 1 set with 113 unique random integers, taken from the [1,113] range. The integers were not sorted.
+
+Here is your set:
+
+Set 1: 94, 67, 92, 48, 18, 36, 47, 2, 109, 41, 103, 89, 81, 60, 95, 66, 14, 15, 76, 57, 105, 106, 74, 79, 5, 88, 93, 96, 25, 33, 30, 77, 28, 8, 108, 44, 73, 29, 21, 27, 97, 68, 107, 34, 31, 58, 71, 39, 63, 100, 49, 85, 64, 17, 80, 9, 111, 59, 72, 70, 3, 52, 110, 24, 32, 23, 53, 19, 45, 42, 65, 10, 7, 1, 12, 4, 38, 86, 51, 11, 84, 6, 40, 82, 113, 62, 99, 20, 69, 112, 104, 50, 46, 35, 54, 26, 61, 98, 101, 13, 22, 56, 90, 78, 75, 55, 87, 91, 16, 102, 43, 37, 83
+Timestamp: 2019-03-10 11:48:14 UTC
+```
 
 ПВЖ:
 
