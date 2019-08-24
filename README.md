@@ -1,3 +1,3 @@
 # Методология Средства трансляции медицинских знаний (СТМЗ)
 
-[Внести новую запись](http://pussia.today/stmz/formtools/new-record/) | Внести новую оценку | [FormTools](http://pussia.today/stmz/formtools)
+[Внести новую запись](http://p1m.org/stmz/formtools/new) | Внести новую оценку | [FormTools](http://p1m.org/stmz/formtools)
