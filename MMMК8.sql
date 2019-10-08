@@ -204,6 +204,7 @@ Totals
 1-α
 
 
+0.95
  	Calculate	
  
 
@@ -222,33 +223,33 @@ Sensitivity
 
 0.9754
  
-0.9754
+0.96814
  
-0.9754
+0.98266
 Specificity
 
 
 0.96435
  
-0.96435
+0.96244
  
-0.96435
+0.96625
 Positive Predictive Value
 
 
 0.56833
  
-0.56833
+0.55061
  
-0.56833
+0.58606
 Negative Predictive Value
 
 
 0.99877
  
-0.99877
+0.99841
  
-0.99877
+0.99914
 
 Diagnostic Test
 
@@ -271,9 +272,9 @@ Likelihood Ratio Positive
 
 27.35791
  
-27.35791
+25.91975
  
-27.35791
+28.87587
 Positive Post-test probability
 
 
@@ -287,9 +288,9 @@ Likelihood Ratio Negative
 
 0.02551
  
-0.02551
+0.01899
  
-0.02551
+0.03427
 Negative Post-test probability
 
 
