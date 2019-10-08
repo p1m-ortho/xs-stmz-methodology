@@ -131,3 +131,168 @@ negative predictive value (NPV)
 https://www2.ccrb.cuhk.edu.hk/stat/confidence%20interval/Diagnostic%20Statistic.htm
 
 */
+
+SELECT max(`ID`)
+FROM `mmmk8`
+where `TP_NTM` = 'X';
+
+/*
+
+max(`ID`)
+38070
+
+*/
+
+SELECT count(*)
+FROM `mmmk8`
+where `P` = 1 and `TP_NTM` = 'X' and `ID` <= 38070
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `P` = 1 and `TP_NTM` != 'X' and `ID` <= 38070
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `P` = 0 and `TP_NTM` = 'X' and `ID` <= 38070
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `P` = 0 and `TP_NTM` != 'X' and `ID` <= 38070;
+
+/*
+
+count(*)
+1705
+1295
+43
+35027
+
+*/
+
+/*
+
+Disease
+
+No Disease
+
+Totals
+
+Test Outcome Positive
+
+
+1705
+ 
+1295
+ 
+3000
+Test Outcome Negative
+
+
+43
+ 
+35027
+ 
+35070
+Totals
+
+
+1748
+ 
+36322
+ 
+38070
+1-α
+
+
+ 	Calculate	
+ 
+
+
+
+Result
+
+Point Estimate
+
+Lower C.I.
+
+Upper C.I.
+
+Sensitivity
+
+
+0.9754
+ 
+0.9754
+ 
+0.9754
+Specificity
+
+
+0.96435
+ 
+0.96435
+ 
+0.96435
+Positive Predictive Value
+
+
+0.56833
+ 
+0.56833
+ 
+0.56833
+Negative Predictive Value
+
+
+0.99877
+ 
+0.99877
+ 
+0.99877
+
+Diagnostic Test
+
+Point Estimate
+
+Lower C.I.
+
+Upper C.I.
+
+Pre-test probability
+
+
+0.04592
+ 
+
+ 
+
+Likelihood Ratio Positive
+
+
+27.35791
+ 
+27.35791
+ 
+27.35791
+Positive Post-test probability
+
+
+0.56833
+ 
+
+ 
+
+Likelihood Ratio Negative
+
+
+0.02551
+ 
+0.02551
+ 
+0.02551
+Negative Post-test probability
+
+
+0.00123
+
+*/
