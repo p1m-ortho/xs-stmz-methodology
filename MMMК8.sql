@@ -41,61 +41,72 @@ https://www.graphpad.com/quickcalcs/kappa1/
 
 */
 
+/* Встал вопрос о количестве записей, просмотренных каждым из скринеров. Известно, что скрининг записей проводили в порядке их следования. При этом САС просмотрела меньше записей, чем НТМ. */
 
-SELECT count(*)
+SELECT max(`ID`)
 FROM `mmmk8`
 where `TP_SAS` = 'X';
 
 /*
 
-count(*)
-685
-
-*/
-
-/* Встал вопрос о количестве записей, просмотренных каждым из скринеров. Известно, что скрининг записей проводили в порядке их следования. */
-
-SELECT max(`ID`)-685
-FROM `mmmk8`
-where `TP_SAS` = 'X';
-
-/*
-
-max(`ID`)-685
-13410
-
-*/
-
-/*
-
-/*
-
-685 + 13410 = 14095
+max(`ID`)
+14095
 
 */
 
 SELECT count(*)
 FROM `mmmk8`
-where `TP_NTM` = 'X' and `ID` <= 14095;
+where `TP_NTM` = 'X' and `TP_SAS` = 'X' and `ID` <= 14095
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `TP_NTM` = 'X' and `TP_SAS` != 'X' and `ID` <= 14095
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `TP_NTM` != 'X' and `TP_SAS` = 'X' and `ID` <= 14095
+union all
+SELECT count(*)
+FROM `mmmk8`
+where `TP_NTM` != 'X' and `TP_SAS` != 'X' and `ID` <= 14095;
 
 /*
 
 count(*)
-634
+593
+41
+92
+13369
 
 */
 
 /*
 
-14095 - 634 = 13461
+A	B	Total
+A	593	41	634
+B	92	13369	13461
+Total	685	13410	14095
+Number of observed agreements: 13962 ( 99.06% of the observations) 
+Number of agreements expected by chance: 12837.6 ( 91.08% of the observations)
+Kappa= 0.894 
+SE of kappa = 0.009 
+95% confidence interval: From 0.876 to 0.912 
+
+"One way to interpret kappa is with this scale (1):
+Kappa < 0: No agreement
+Kappa between 0.00 and 0.20: Slight agreement
+Kappa between 0.21 and 0.40: Fair agreement
+Kappa between 0.41 and 0.60: Moderate agreement
+Kappa between 0.61 and 0.80: Substantial agreement
+Kappa between 0.81 and 1.00: Almost perfect agreement."
+1. Landis, J.R.; Koch, G.G. (1977). The measurement of observer agreement for categorical data. Biometrics. 33 (1): 159-174. https://doi.org/10.2307%2F2529310
+
+The calculator was updated in July 2014 so it doesn't try to compute the SE or CI when Kappa = 0.0.
+This calculator was changed in April 2011 to use a better equation for computing the SE and confidence interval of Kappa. It now uses equations 18.16 to 18.20 from Fleiss, Statistical Methods for Rates & Proportions (3rd edition) . It did not work between Aug. 1 and Sept 7, 2012.
 
 */
 
-/*
-
-
-
-*/
+/* Поскольку полученное значение нижней границы 95%-ного ДИ каппы 0,876 > 0,600 (почти совершенное согласие), то и при расчете показателей диагностической информативности будем использовать выборку записей, просмотренных НТМ. */
 
 /*
 
