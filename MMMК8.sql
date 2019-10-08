@@ -66,48 +66,34 @@ max(`ID`)-685
 
 */
 
-SELECT count(*)
-FROM `mmmk8`
-where `TP_NTM` = 'X';
-
 /*
-
-count(*)
-1748
-
-*/
 
 /*
 
 685 + 13410 = 14095
 
-14095 - 1748 = 12347
+*/
+
+SELECT count(*)
+FROM `mmmk8`
+where `TP_NTM` = 'X' and `ID` <= 14095;
+
+/*
+
+count(*)
+634
 
 */
 
 /*
 
-	A	B	Total
-A	1748	12347	14095
-B	685	13410	14095
-Total	2433	25757	28190
-Number of observed agreements: 15158 ( 53.77% of the observations) 
-Number of agreements expected by chance: 14095.0 ( 50.00% of the observations)
-Kappa= 0.075 
-SE of kappa = 0.003 
-95% confidence interval: From 0.069 to 0.082 
+14095 - 634 = 13461
 
-"One way to interpret kappa is with this scale (1):
-Kappa < 0: No agreement
-Kappa between 0.00 and 0.20: Slight agreement
-Kappa between 0.21 and 0.40: Fair agreement
-Kappa between 0.41 and 0.60: Moderate agreement
-Kappa between 0.61 and 0.80: Substantial agreement
-Kappa between 0.81 and 1.00: Almost perfect agreement."
-1. Landis, J.R.; Koch, G.G. (1977). The measurement of observer agreement for categorical data. Biometrics. 33 (1): 159-174. https://doi.org/10.2307%2F2529310
+*/
 
-The calculator was updated in July 2014 so it doesn't try to compute the SE or CI when Kappa = 0.0.
-This calculator was changed in April 2011 to use a better equation for computing the SE and confidence interval of Kappa. It now uses equations 18.16 to 18.20 from Fleiss, Statistical Methods for Rates & Proportions (3rd edition) . It did not work between Aug. 1 and Sept 7, 2012.
+/*
+
+
 
 */
 
