@@ -297,3 +297,14 @@ Negative Post-test probability
 0.00123
 
 */
+
+SELECT count(*)
+FROM `mmmk8`
+where `P` = 1;
+
+/*
+
+count(*)
+11062
+
+*/
