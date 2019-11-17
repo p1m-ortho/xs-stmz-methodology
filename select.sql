@@ -31,3 +31,23 @@ group by upi, mrn) t1;
 
 /* count(f1)
 3468 */
+
+select count(f1)
+from
+(SELECT count(*) f1
+FROM `gsq_sx_ct_mri_dcd`
+where spinality_type='Спинальная операция' and ward_field not like '%1%'
+group by upi, mrn) t1;
+
+/* count(f1)
+382 */
+
+select count(f1)
+from
+(SELECT count(*) f1
+FROM `gsq_sx_ct_mri_dcd`
+where spinality_type='Спинальная операция' and ward_field like '%1%'
+group by upi, mrn) t1;
+
+/* count(f1)
+3086 */
