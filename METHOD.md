@@ -183,7 +183,7 @@ UPAT
 
 Изменил отображение в FormTools только записей по апрельской работе 2019, поскольку САС планирует довбивать опросники:
 
-```
+```sql
 UPDATE `ft_form_1`
 SET `is_finalized` = NULL
 WHERE `upat_sf36_trng` IS NULL;
