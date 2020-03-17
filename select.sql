@@ -59,3 +59,11 @@ where t4.col_2 is null
 group by t2.col_2, t2.col_3, t2.col_4, t2.col_5, t2.col_7
 
 /* 78 Datensätze */
+
+select /* Выводит количество пациентов.  */ count(*)
+from (SELECT count(*)
+FROM `ft_form_12`
+group by col_3, col_4, col_5, col_7) t
+
+/* count(*)
+17120 */
