@@ -92,3 +92,7 @@
 [Анонимизированную таблицу прилагаю](https://github.com/p1m-ortho/xc-led-dzhanelidze-imaging/blob/fcdfe1517b4b859f2c435ecaaa293eb5ec69c376/2019-03-22_2047_XC_-_Cleaned_and_randomised_-_Screening_-_Anonymised.csv). При анонимизации отталкивался от [процедуры анонимизации по протоколу теста GSQ от 5 февраля 2019](https://github.com/p1m-ortho/xs-led-dzhanelidze-global-spine-query/blob/44879a205a7753a977364785d631b16d97117a79/METHOD.md#приложение-процедура-анонимизации). Спасибо [WPS Office](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng).
 
 `NA` обозначает отсутствующее значение. В частности применительно к `UPI НИИ СП` — отсутствие пациента в базе НИИ СП (амбулаторные консультации без опыта госпитализаций в НИИ СП).
+
+## Вторая крупная ревизия снимков
+
+См. [xa-apr-2020.md](https://github.com/p1m-ortho/xs-stmz-methodology/blob/dzhanelidze-imaging/xa-apr-2020.md).
