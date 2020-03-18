@@ -65,9 +65,13 @@
 Свободнопредельная каппа Коэна: … (95% ДИ: … ). Нижняя граница 95% ДИ соответствует … согласию (Landis, JR & Koch, GG (1977). The measurement of observer agreement for categorical data. Biometrics, 33, 159-174).
 
 > 0.01 – 0.20 slight agreement
+>
 > 0.21 – 0.40 fair agreement
+>
 > 0.41 – 0.60 moderate agreement
+>
 > 0.61 – 0.80 substantial agreement
+>
 > 0.81 – 1.00 almost perfect or perfect agreement
 
 Коды МКБ:
