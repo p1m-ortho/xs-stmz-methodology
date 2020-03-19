@@ -66,4 +66,4 @@ FROM `ft_form_12`
 group by col_3, col_4, col_5, col_7) t
 
 /* count(*)
-17120 */
+32574 */
