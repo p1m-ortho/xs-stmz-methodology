@@ -12,11 +12,19 @@
 
 Разработано 4 апреля 2020 в процессе подготовки протокола для [scoping-обзора по национальным клиническим рекомендациям по травме позвоночника](https://osf.io/7vx5n/). Изначально стояла цель разработать core-датасет для картирования по травме позвоночника, но получалось нечто большее, и по мере этого генерализовался.
 
+> This was developed on April 4, 2020 in the process of making a protocol for [the scoping review of national clinical practice guidelines on spinal injuries](https://osf.io/7vx5n/). Initially, the purpose was to develop a core spinal injuries charting dataset, but it became something bigger, so I generalized in accordance with that.
+
 Прежде на протяжении 4 лет (с 2016) неоднократные и безуспешные попытки разработать аналогичную форму — частью опубликованные, частью нет. Очень утомительно было бы исчерпывающе приводить все, но некоторые из них см. по [репозиториям p1m-ortho](https://github.com/p1m-ortho).
+
+> For four years prior (since 2016), there were multiple (unsuccessful) attempts to develop an analogous form, some of which were published, some not. It would be overwhelming to rigorously list all, but see some of them throughout [the repositories at p1m-ortho](https://github.com/p1m-ortho).
 
 Образец формы реализован на платформе [FormTools](https://formtools.org).
 
+> A sample form was built with the [FormTools](https://formtools.org) platform.
+
 СТМЗ — [«средство трансляции медицинских знаний»](https://github.com/p1m-ortho/xs-stmz-methodology). Название `Fives` отсылает к [персонажу «Звездных войн»](https://starwars.fandom.com/ru/wiki/КС-5555).
+
+> STMZ is a Russian acronym for [a ‘medical knowledge translation tool’](https://github.com/p1m-ortho/xs-stmz-methodology). The `Fives` title is [a Star Wars character](https://starwars.fandom.com/wiki/CT-5555) reference.
 
 ### Результаты | Results
 
