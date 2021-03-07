@@ -17,3 +17,24 @@ set `is_finalized` = 'yes'
 where `has_proms_croms` = 1;
 
 /* ok; showing 342 records */
+
+/* select only one among all records for a patient */
+
+select submission_id
+from `ft_form_12`
+where `has_proms_croms` = '1'
+group by col_2;
+
+/* added a new field is_for_fill_out for the form filler to show what records to fill in so that they didn’t need to fill multiple records for a patient; uids replaced with five asterisks for anonymity */
+
+update `ft_form_12`
+set is_for_fill_out = 'yes'
+where submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = ***** OR submission_id = *****;
+
+/* ok; edited 90 records */
+
+update `ft_form_12`
+set is_for_fill_out = 'no'
+where `has_proms_croms` = 1 and `is_for_fill_out` is null;
+
+/* ok; edited 259 records (total is 349 not 342 now, as found PROM/CROM records for 7 more GSQ records during QA) */
