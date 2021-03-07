@@ -38,3 +38,31 @@ set is_for_fill_out = 'no'
 where `has_proms_croms` = 1 and `is_for_fill_out` is null;
 
 /* ok; edited 259 records (total is 349 not 342 now, as found PROM/CROM records for 7 more GSQ records during QA) */
+
+/* select all eligible PATIENTS */
+
+SELECT *
+FROM `ft_form_12`
+where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-mark';
+
+/* ok; returns 55 records */
+
+/* select PATIENTS from all study arms */
+
+SELECT *
+FROM `ft_form_12`
+where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-mark' and study_arm = 'surgery';
+
+/* ok; returns 30 records */
+
+SELECT *
+FROM `ft_form_12`
+where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-mark' and study_arm = 'nonoperative';
+
+/* ok; returns 16 records */
+
+SELECT *
+FROM `ft_form_12`
+where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-mark' and study_arm = 'percutaneous';
+
+/* ok; returns 9 records */
