@@ -69,18 +69,18 @@ where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-
 
 /* calculate SF-36 */
 
-SELECT uid `Компьютерный номер`, study_arm `Группа исследования`,
-(i3+i4+i5+i6+i7+i8+i9+i10+i11+i12)/10 `Physical functioning`,
-(i13+i14+i15+i16)/4 `Role limitations due to physical health`,
-(i17+i18+i19)/3 `Role limitations due to emotional problems`,
-(i23+i27+i29+i31)/4 `Energy/fatigue`,
-(i24+i25+i26+i28+i30)/5 `Emotional well-being`,
-(i20+i32)/2 `Social functioning`,
-(i21+i22)/2 `Pain`,
-(i1+i33+i34+i35+i36)/5 `General health`
+SELECT uid `Компьютерный номер`, study_arm `Группа исследования`, col_8 `Дата поступления`, col_19 `Дата операции`, t_pee_date `Дата опросника`,
+(i3+i4+i5+i6+i7+i8+i9+i10+i11+i12)/10 `Physical functioning (PF)`,
+(i13+i14+i15+i16)/4 `Role-physical (RP)`,
+(i21+i22)/2 `Bodily pain (BP)`,
+(i1+i33+i34+i35+i36)/5 `General health (GH)`,
+(i23+i27+i29+i31)/4 `Vitality (VT)`,
+(i20+i32)/2 `Social functioning (SF)`,
+(i17+i18+i19)/3 `Role-emotional (RE)`,
+(i24+i25+i26+i28+i30)/5 `Mental Health (MH)`
 FROM
 (
-    SELECT uid, study_arm,
+    SELECT uid, study_arm, col_8, col_19, t_pee_date,
     IF(`dv_pee_sf36_q1`='1',100,IF(`dv_pee_sf36_q1`='2',75,IF(`dv_pee_sf36_q1`='3',50,IF(`dv_pee_sf36_q1`='4',25,IF(`dv_pee_sf36_q1`='5',0,0))))) i1,
     IF(`dv_pee_sf36_q2`='1',100,IF(`dv_pee_sf36_q2`='2',75,IF(`dv_pee_sf36_q2`='3',50,IF(`dv_pee_sf36_q2`='4',25,IF(`dv_pee_sf36_q2`='5',0,0))))) i2,
     IF(`dv_pee_sf36_q3`='1',0,IF(`dv_pee_sf36_q3`='2',50,IF(`dv_pee_sf36_q3`='3',100,0))) i3,
