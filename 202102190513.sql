@@ -122,3 +122,18 @@ FROM
 ) sf36
                                                                                             
 /* returned 65 records (more than one SF-36 for a patient) – see sql_sf36.csv (uids replaced with five asterisks for anonymity) */
+                                                                                            
+/* show only eligible for study and ineligible for vertebroplasty; uids replaced with five asterisks for anonymity */
+                                                                                            
+SELECT col_2
+FROM `ft_form_12`
+where has_proms_croms = 1 and is_for_fill_out = 'yes' and eligibility != 'cross-mark' and is_needle_candidate = 'cross-mark';
+
+update `ft_form_12`
+set is_finalized = null;
+
+update `ft_form_12`
+set is_finalized = 'yes'
+where col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = ***** OR col_2 = *****;
+
+/* ok; 28 patients; 110 records */
